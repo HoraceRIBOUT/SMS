@@ -25,6 +25,13 @@ public class Bloc : MonoBehaviour
     private Quaternion targetRotation;
 
 
+    public List<SpriteRenderer> myBox;
+
+
+    public Color brown;
+    public float colorSpeed = 1;
+
+
     public void Init(int indexOfTheQuest, Color col)
     {
         questIndex = indexOfTheQuest;
@@ -34,6 +41,7 @@ public class Bloc : MonoBehaviour
 
         foreach(SpriteRenderer sR in GetComponentsInChildren<SpriteRenderer>())
         {
+            myBox.Add(sR);
             sR.color = col;
         }
 
@@ -93,6 +101,44 @@ public class Bloc : MonoBehaviour
         this.transform.rotation = targetRotation;
         rotateRoutine = null;
     }
+    
+    public void ChangeColorToBrown()
+    {
+
+    }
+
+    [ContextMenu("Set Brown")]
+    public void SetBrown()
+    {
+        StartCoroutine(ChangeColorTo(brown));
+    }
+
+    public void SetTransparency ( float opacity)
+    {
+        Color col = myBox[0].color;
+        col.a = opacity;
+        StartCoroutine(ChangeColorTo(col));
+    }
+    
+    public IEnumerator ChangeColorTo(Color endColor)
+    {
+        float lerp = 0;
+        Color baseColor = myBox[0].color;
+        while (lerp < 1)
+        {
+            lerp += Time.deltaTime * colorSpeed;
+            foreach (SpriteRenderer sR in myBox)
+            {
+                sR.color = Color.Lerp(baseColor, endColor, lerp);
+            }
+            yield return new WaitForSeconds(0.01f);
+        }
+        foreach (SpriteRenderer sR in myBox)
+        {
+            sR.color = endColor;
+        }
+    }
+
 
     public void TestIfStop()
     {
@@ -153,6 +199,8 @@ public class Bloc : MonoBehaviour
 
     public void KillMe()
     {
+
+        Spawner.instance.allCurrentBloc.Remove(this);
         Destroy(this.gameObject);
     }
 

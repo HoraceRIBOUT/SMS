@@ -14,8 +14,16 @@ public class Spawner : MonoBehaviour
 
     public List<GameObject> blocPrefab = new List<GameObject>();
     public bool imfree = true;
+    public Balance balance;
 
     public List<Color> availableColor;
+
+
+    [Header("Current")]
+    public List<Bloc> allCurrentBloc = new List<Bloc>();
+
+    [Header("Changing focus")]
+    public Darkener darkener;
 
     public void Start()
     {
@@ -37,7 +45,35 @@ public class Spawner : MonoBehaviour
 
         //bloc;
         imfree = false;
+
+        allCurrentBloc.Add(bloc);
     }
 
+
+    [ContextMenu("Transparent")]
+    public void SetTransparent()
+    {
+        foreach(Bloc bl in allCurrentBloc)
+        {
+            bl.SetTransparency(0.25f);
+        }
+        balance.SetTransparency(0.25f);
+
+        darkener.Deactivate();
+    }
+
+    [ContextMenu("Opaque")]
+    public void SetOpaque()
+    {
+        foreach (Bloc bl in allCurrentBloc)
+        {
+            bl.SetTransparency(1);
+        }
+        balance.SetTransparency(1);
+
+        darkener.Activate();
+
+       
+    }
 
 }

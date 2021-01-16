@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class darkener : MonoBehaviour
+public class Darkener : MonoBehaviour
 {
     public bool active = true;
 
