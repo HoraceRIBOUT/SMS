@@ -24,12 +24,19 @@ public class Bloc : MonoBehaviour
     private Coroutine rotateRoutine = null;
     private Quaternion targetRotation;
 
-    public void Init(int indexOfTheQuest)
+
+    public void Init(int indexOfTheQuest, Color col)
     {
         questIndex = indexOfTheQuest;
         timerStopped = timerToWait;
         _rgbd.gravityScale = 0;
         targetRotation = this.transform.rotation;
+
+        foreach(SpriteRenderer sR in GetComponentsInChildren<SpriteRenderer>())
+        {
+            sR.color = col;
+        }
+
     }
 
     // Update is called once per frame
@@ -89,13 +96,14 @@ public class Bloc : MonoBehaviour
 
     public void TestIfStop()
     {
+        if (timerStopped <= 0)
+        {
+            Spawner.instance.SpawnBloc();
+            return;
+        }
         if (_rgbd.velocity.sqrMagnitude < epsilon * epsilon)
         {
             timerStopped -= Time.deltaTime;
-            if(timerStopped < 0)
-            {
-                Spawner.instance.SpawnBloc();
-            }
         }
         else
         {
@@ -115,12 +123,18 @@ public class Bloc : MonoBehaviour
             return;
         }
 
-        //if()
+        if(activeBloc)
         {
 //            Debug.Log("Hello ?");
             activeBloc = false;
             Spawner.instance.imfree = true;
            _rgbd.gravityScale = 1;
+
+//            Debug.Log("Hello : " + timerStopped);
+            if (timerStopped == 0)
+            {
+                Spawner.instance.SpawnBloc();
+            }
         }
     }
 
@@ -142,5 +156,13 @@ public class Bloc : MonoBehaviour
         Destroy(this.gameObject);
     }
 
+    //[ContextMenu("SpriteChange")]
+    //public void ChangeAllSpriteTo()
+    //{
+    //    foreach(SpriteRenderer sR in GetComponentsInChildren<SpriteRenderer>())
+    //    {
+    //        sR.sprite = GameManager.instance.newSprite;
+    //    }
+    //}
 
 }

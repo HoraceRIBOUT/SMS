@@ -38,6 +38,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: UI
+    uniqueID: 1477821505
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Play
+    uniqueID: 2844715695
     locked: 0
