@@ -6,8 +6,11 @@ public class Bloc : MonoBehaviour
 {
     public static float epsilon = 0.05f;
 
+    public Vector2 minxMaxX = new Vector2(-4,4);
+
     public Vector3 speed = Vector3.down;
     public float speedLR = 3f;
+    public float rotationSpeed = 4f;
     public int questIndex = 0;
 
     public bool activeBloc = true;
@@ -18,12 +21,15 @@ public class Bloc : MonoBehaviour
     private Vector2 velocityMemory;
 
     public Rigidbody2D _rgbd;
+    private Coroutine rotateRoutine = null;
+    private Quaternion targetRotation;
 
     public void Init(int indexOfTheQuest)
     {
         questIndex = indexOfTheQuest;
         timerStopped = timerToWait;
         _rgbd.gravityScale = 0;
+        targetRotation = this.transform.rotation;
     }
 
     // Update is called once per frame
@@ -32,13 +38,27 @@ public class Bloc : MonoBehaviour
         if (activeBloc)
         {
             Vector3 currentSpeed = speed;
-            if (Input.GetKey(KeyCode.RightArrow))
+            if (Input.GetKey(KeyCode.RightArrow) && this.transform.position.x < minxMaxX.y)
             {
                 currentSpeed += Vector3.right * speedLR;
             }
-            if (Input.GetKey(KeyCode.LeftArrow))
+            if (Input.GetKey(KeyCode.LeftArrow) && this.transform.position.x > minxMaxX.x)
             {
                 currentSpeed += Vector3.left * speedLR;
+            }
+            if (Input.GetKey(KeyCode.DownArrow))
+            {
+                currentSpeed += speed;
+            }
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                currentSpeed += speed * 6f;
+            }
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (rotateRoutine != null) StopCoroutine(rotateRoutine);
+                rotateRoutine = StartCoroutine( LaunchRotation(true));
             }
 
 
@@ -48,6 +68,23 @@ public class Bloc : MonoBehaviour
         {
             TestIfStop();
         }
+    }
+
+    public IEnumerator LaunchRotation(bool up)
+    {
+        float lerp = 0;
+        Quaternion baseRotation = this.transform.rotation;
+        targetRotation = Quaternion.Euler(0, 0, (up?90:-90) + targetRotation.eulerAngles.z);
+        while (lerp < 1)
+        {
+            lerp += Time.deltaTime * rotationSpeed;
+            float interpretedLerp = Mathf.Clamp01(lerp);
+            this.transform.rotation = Quaternion.Lerp(baseRotation, targetRotation, interpretedLerp);
+
+            yield return new WaitForSeconds(0.01f);
+        }
+        this.transform.rotation = targetRotation;
+        rotateRoutine = null;
     }
 
     public void TestIfStop()
@@ -68,11 +105,22 @@ public class Bloc : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
+        Bord bord = collision.gameObject.GetComponent<Bord>();
+        if(bord != null)
+        {
+            if(timerStopped > 0)
+                Spawner.instance.SpawnBloc();
+
+            KillMe();
+            return;
+        }
+
         //if()
         {
-            Debug.Log("Hello ?");
+//            Debug.Log("Hello ?");
             activeBloc = false;
-            _rgbd.gravityScale = 1;
+            Spawner.instance.imfree = true;
+           _rgbd.gravityScale = 1;
         }
     }
 
@@ -88,6 +136,11 @@ public class Bloc : MonoBehaviour
         _rgbd.velocity = velocityMemory;
     }
 
+
+    public void KillMe()
+    {
+        Destroy(this.gameObject);
+    }
 
 
 }

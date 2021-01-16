@@ -9,9 +9,9 @@ public class Balance : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_rgbd.velocity.magnitude > Bloc.epsilon * Bloc.epsilon)
-        {
-            _rgbd.velocity *= Time.deltaTime;
-        }
+        //if(_rgbd.angularVelocity > Bloc.epsilon)
+        //{
+        //    _rgbd.angularVelocity *= Time.deltaTime;
+        //}
     }
 }
