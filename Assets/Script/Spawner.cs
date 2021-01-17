@@ -76,7 +76,7 @@ public class Spawner : MonoBehaviour
         Bloc bloc = Instantiate(blocPrefab[index], this.transform.position, Quaternion.identity, null).GetComponent<Bloc>();
 
 
-        Color randColo = availableColor[Random.Range(0, availableColor.Count)];
+        Color randColo = availableColor[index];//availableColor[Random.Range(0, availableColor.Count)];
         bloc.Init(1, randColo);
 
         //bloc;

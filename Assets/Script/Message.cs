@@ -52,7 +52,7 @@ public class Message : MonoBehaviour
             gO.SetActive(true);
 
 
-        Debug.Log("Height = " + height + " : " + rectTr.sizeDelta.x);
+//        Debug.Log("Height = " + height + " : " + rectTr.sizeDelta.x);
         rectTr.sizeDelta = new Vector2(rectTr.sizeDelta.x, height);
 
         endHeight = rectTr.anchoredPosition;
@@ -76,6 +76,11 @@ public class Message : MonoBehaviour
 
     public float SetText(string message, Sprite icon, bool heros)
     {
+        if(message == "")
+        {
+            Debug.LogError("Empty message here !");
+            message = " ";
+        }
 
         textGO.gameObject.SetActive(true);
         imageGO.gameObject.SetActive(false);
@@ -106,10 +111,17 @@ public class Message : MonoBehaviour
 
     }
 
+    public void SetDescColor(Color color)
+    {
+        descGO[0].GetComponent<Image>().color = color;
+    }
+
     public Vector2 endHeight;
 
     public void MoveUp(float height, float speed, AnimationCurve messageCurve)
     {
+        if (kill)
+            return;
         StopAllCoroutines();
         StartCoroutine(MoveOneMessage(height, rectTr, speed, messageCurve));
     }
@@ -133,5 +145,13 @@ public class Message : MonoBehaviour
         message.anchoredPosition = endHeight;
     }
 
+    bool kill = false;
+
+    public void Destroy()
+    {
+        StopAllCoroutines();
+        kill = true;
+        Destroy(this.gameObject);
+    }
 
 }

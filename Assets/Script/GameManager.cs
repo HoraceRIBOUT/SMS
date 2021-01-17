@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     public Discussion discuss;
     public Spawner spawner;
     public Timer timer;
+    public AudioManager audioManager;
+    
 
     public enum gameState
     {
@@ -35,6 +37,9 @@ public class GameManager : MonoBehaviour
     public QuestData currentQuest;
 
     public List<string> setNameAlreadyUnlock = new List<string>();
+
+    public Color magicMessageColor;
+    public Color forceMessageColor;
 
 
     public void Start()
@@ -65,6 +70,7 @@ public class GameManager : MonoBehaviour
     {
         discuss.AddADescription("Vous avez reçu une nouvelle quête.");
         currentState = gameState.message;
+        yield return new WaitForSeconds(2f);
         List<QuestData.Message> messageList = quest.messages;
         foreach (QuestData.Message message in messageList)
         {
@@ -73,6 +79,8 @@ public class GameManager : MonoBehaviour
                 discuss.AddAnImage(message.image, (int)message.iconeIndex, hero);
             else
                 discuss.AddAMessage(message.message, (int)message.iconeIndex, hero);
+
+
             yield return new WaitForSeconds(message.timingForReadIt);
         }
         Debug.Log("Introduction finish : " + quest.id);
@@ -93,13 +101,18 @@ public class GameManager : MonoBehaviour
         bool magic = spawner.GetBalanceResult();
         if (magic)
         {
+            discuss.AddADescription("Vous avez décidez d'utilisez la magie !", magicMessageColor);
+            yield return new WaitForSeconds(2f);
             StartCoroutine(DisplayQuestResult(quest.messageIfMagic, quest.setUnlockIfMagic));
         }
         else
         {
+            discuss.AddADescription("Vous avez décidez d'utilisez la force !", forceMessageColor);
+            yield return new WaitForSeconds(2f);
             StartCoroutine(DisplayQuestResult(quest.messageIfForce, quest.setUnlockIfForce));
         }
     }
+
     public IEnumerator DisplayQuestResult(List<QuestData.Message> messageList, List<QuestSet> sets)
     {
         Debug.Log("Display Quest Result");
@@ -110,6 +123,8 @@ public class GameManager : MonoBehaviour
                 discuss.AddAnImage(message.image, (int)message.iconeIndex, hero);
             else
                 discuss.AddAMessage(message.message, (int)message.iconeIndex, hero);
+
+
             yield return new WaitForSeconds(message.timingForReadIt);
         }
         Debug.Log("Finish displaying result");
@@ -122,11 +137,14 @@ public class GameManager : MonoBehaviour
                 if (setNameAlreadyUnlock.Contains(set.id))
                     continue;
                 discuss.AddADescription("Vous avez débloqué de nouvelles quêtes !");
+                audioManager.PlayNewSet();
+
                 foreach (QuestData card in set.allCardToThatSet)
                 {
                     questDataFullDeck.Add(card);
                     currentQuestDeck.Add(card);
                 }
+                yield return new WaitForSeconds(2f);
             }
         }
 
