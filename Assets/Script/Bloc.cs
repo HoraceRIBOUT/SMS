@@ -47,19 +47,41 @@ public class Bloc : MonoBehaviour
 
     }
 
+    bool goLeftPls = false;
+    bool goRightPls = false;
+
+    public void GoLeft()
+    {
+        if (activeBloc)
+            goLeftPls = true;
+    }
+
+    public void GoRight()
+    {
+        if(activeBloc)
+            goRightPls = true;
+    }
+
+    public void Rotate()
+    {
+
+    }
+
     // Update is called once per frame
     void Update()
     {
         if (activeBloc)
         {
             Vector3 currentSpeed = speed;
-            if (Input.GetKey(KeyCode.RightArrow) && this.transform.position.x < minxMaxX.y)
+            if ((Input.GetKey(KeyCode.RightArrow) || goRightPls) && this.transform.position.x < minxMaxX.y)
             {
                 currentSpeed += Vector3.right * speedLR;
-            }
-            if (Input.GetKey(KeyCode.LeftArrow) && this.transform.position.x > minxMaxX.x)
+                goRightPls = false;
+            } 
+            if ((Input.GetKey(KeyCode.LeftArrow) || goLeftPls) && this.transform.position.x > minxMaxX.x)
             {
                 currentSpeed += Vector3.left * speedLR;
+                goLeftPls = false;
             }
             if (Input.GetKey(KeyCode.DownArrow))
             {

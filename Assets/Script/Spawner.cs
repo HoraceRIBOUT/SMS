@@ -20,14 +20,28 @@ public class Spawner : MonoBehaviour
 
 
     [Header("Current")]
+    public Bloc lastBloc = null;
     public List<Bloc> allCurrentBloc = new List<Bloc>();
 
     [Header("Changing focus")]
     public Darkener darkener;
+    public float opacityForBalanceAndBox = 0.1f;
 
     public void Start()
     {
         SpawnBloc();
+    }
+
+    public void ActiveBlocGoLeft()
+    {
+        if (lastBloc != null)
+            lastBloc.GoLeft();
+    }
+
+    public void ActiveBlocGoRight()
+    {
+        if (lastBloc != null)
+            lastBloc.GoRight();
     }
 
 
@@ -47,6 +61,7 @@ public class Spawner : MonoBehaviour
         imfree = false;
 
         allCurrentBloc.Add(bloc);
+        lastBloc = bloc;
     }
 
 
@@ -55,9 +70,9 @@ public class Spawner : MonoBehaviour
     {
         foreach(Bloc bl in allCurrentBloc)
         {
-            bl.SetTransparency(0.25f);
+            bl.SetTransparency(opacityForBalanceAndBox);
         }
-        balance.SetTransparency(0.25f);
+        balance.SetTransparency(opacityForBalanceAndBox);
 
         darkener.Deactivate();
     }

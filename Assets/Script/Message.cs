@@ -28,15 +28,44 @@ public class Message : MonoBehaviour
 
         foreach (GameObject gO in leftGO)
         {
-            gO.SetActive(!heros);
+            gO.SetActive(heros);
         }
         foreach (GameObject gO in rightGO)
         {
-            gO.SetActive(heros);
+            gO.SetActive(!heros);
         }
 
         Debug.Log("Height = " + height + " : " + rectTr.sizeDelta.x);
         rectTr.sizeDelta = new Vector2(rectTr.sizeDelta.x, height);
+    }
+
+    public void Init(float height)
+    {
+        rectTr.anchoredPosition = Vector3.zero;
+        
+        foreach (GameObject gO in leftGO)
+            gO.SetActive(false);
+        foreach (GameObject gO in rightGO)
+            gO.SetActive(false);
+
+        Debug.Log("Height = " + height + " : " + rectTr.sizeDelta.x);
+        rectTr.sizeDelta = new Vector2(rectTr.sizeDelta.x, height);
+    }
+
+
+    public float SetText(string message)
+    {
+        textGO.gameObject.SetActive(true);
+        imageGO.gameObject.SetActive(false);
+
+        textGO.SetText(message);
+        textGO.ForceMeshUpdate();
+
+        float height = textGO.renderedHeight + margin * 2;//textGO.textInfo.lineCount * (textGO.fontSize + textGO.lineSpacing + ) + margin * 2;
+        Init(height);
+
+
+        return height;
     }
 
     public float SetText(string message, Sprite icon, bool heros)
