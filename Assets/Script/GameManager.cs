@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
     public List<QuestData> currentQuestDeck = new List<QuestData>();
 
     public QuestData currentQuest;
+    public int questNumber = 0;
 
     public List<string> setNameAlreadyUnlock = new List<string>();
 
@@ -60,6 +61,7 @@ public class GameManager : MonoBehaviour
 
     public void TreatCurrentQuest()
     {
+        questNumber++;
         StartCoroutine(DiplayQuestRequest(currentQuest));
         //wait for end of discussion
 
@@ -89,7 +91,10 @@ public class GameManager : MonoBehaviour
         //Quest number ++  too 
 
         currentState = gameState.balance;
-        spawner.SpawnBloc();
+        if (!spawner.imfree)
+            spawner.imfree = true;
+
+        spawner.SpawnBloc(questNumber);
         //wait for end of timer
         timer.SetTimer(quest.timerForQuest);
         yield return new WaitForSeconds(quest.timerForQuest);
@@ -144,9 +149,17 @@ public class GameManager : MonoBehaviour
                     questDataFullDeck.Add(card);
                     currentQuestDeck.Add(card);
                 }
+                foreach(QuestData card in set.cardToRemove)
+                {
+                    questDataFullDeck.Remove(card);
+                }
                 yield return new WaitForSeconds(2f);
             }
         }
+
+        //make brown
+        //and destroy previous
+        spawner.ClearBloc(questNumber);
 
         //Reach for the next deck !
         NextQuest();

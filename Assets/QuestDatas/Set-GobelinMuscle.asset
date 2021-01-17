@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: be531d3998ee4ee42968270cfc36b742, type: 3}
-  m_Name: BasicSet
+  m_Name: Set-GobelinMuscle
   m_EditorClassIdentifier: 
-  id: Basic Set
-  allCardToThatSet:
+  id: Gobelin Muscle
+  allCardToThatSet: []
+  cardToRemove:
   - {fileID: 11400000, guid: e52c0ec9978ab044d99a937ff2a6b964, type: 2}
