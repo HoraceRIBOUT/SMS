@@ -79,7 +79,7 @@ public class Message : MonoBehaviour
         if(message == "")
         {
             Debug.LogError("Empty message here !");
-            message = " ";
+            message = ".";
         }
 
         textGO.gameObject.SetActive(true);

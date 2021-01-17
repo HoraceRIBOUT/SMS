@@ -15,67 +15,132 @@ MonoBehaviour:
   id: GobelinBlesse
   messages:
   - iconeIndex: 3
-    isAPhoto: 1
-    message: 
+    isAPhoto: 0
+    message: "Au secours ! J'me suis p\xE9t\xE9 la jambe !"
     image: {fileID: 21300000, guid: 828ea2683a033a746b4edfc6603ef8bb, type: 3}
     timingForReadIt: 4
-  - iconeIndex: 3
+  - iconeIndex: 0
     isAPhoto: 0
-    message: T'as vu ?
+    message: "Ah oui, \xE7a a l'air douloureux... "
     image: {fileID: 0}
     timingForReadIt: 4
   - iconeIndex: 3
     isAPhoto: 0
-    message: C'est mon dessin ?
+    message: "Oh, \xE7a n'est pas si douloureux... Mais je boite et c'est d\xE9sagr\xE9able."
     image: {fileID: 0}
-    timingForReadIt: 4
+    timingForReadIt: 6
   - iconeIndex: 3
     isAPhoto: 0
-    message: Rend le vivant, stp.
-    image: {fileID: 0}
+    message: Soignez moi svp
+    image: {fileID: 21300000, guid: 828ea2683a033a746b4edfc6603ef8bb, type: 3}
     timingForReadIt: 4
   timerForQuest: 5
   messageIfMagic:
   - iconeIndex: 0
     isAPhoto: 0
-    message: 
+    message: "Que ta chair revienne, gonfle et se gorge ! Que ta sant\xE9 revienne
+      et que..."
     image: {fileID: 0}
-    timingForReadIt: 0
+    timingForReadIt: 3
   - iconeIndex: 0
     isAPhoto: 0
-    message: 
+    message: Euh...
     image: {fileID: 0}
-    timingForReadIt: 0
+    timingForReadIt: 3
+  - iconeIndex: 4
+    isAPhoto: 0
+    message: OUAH ! JE ME SENS VACHEMENT BIEN
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 4
+    isAPhoto: 0
+    message: JE ME SENS GRAND !
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 4
+    isAPhoto: 0
+    message: JE ME SENS... MUSCLE
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 4
+    isAPhoto: 1
+    message: 
+    image: {fileID: 21300000, guid: 828ea2683a033a746b4edfc6603ef8bb, type: 3}
+    timingForReadIt: 1
+  - iconeIndex: 4
+    isAPhoto: 0
+    message: JE ME SENS FORT ! MERCI HEROS.
+    image: {fileID: 0}
+    timingForReadIt: 5
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Le gobelin s'enfuit, \xE9cartant les arbre sur le chemin comme si il
+      s'agissait de brindilles."
+    image: {fileID: 0}
+    timingForReadIt: 5
   - iconeIndex: 0
     isAPhoto: 0
-    message: 
+    message: "Quelle monstre ai-je l\xE2cher dans la nature ?"
     image: {fileID: 0}
-    timingForReadIt: 0
-  - iconeIndex: 0
-    isAPhoto: 0
-    message: 
-    image: {fileID: 0}
-    timingForReadIt: 0
-  setUnlockIfMagic: []
+    timingForReadIt: 3
+  setUnlockIfMagic:
+  - {fileID: 11400000, guid: 8a90b2c087e414c4eb2e96a6cc0b36d4, type: 2}
   messageIfForce:
   - iconeIndex: 0
     isAPhoto: 0
-    message: 
+    message: Attention, mord un truc. Je vais te remettre la jambe en place en la
+      serrant fort !
     image: {fileID: 0}
-    timingForReadIt: 0
+    timingForReadIt: 5
   - iconeIndex: 0
     isAPhoto: 0
-    message: 
+    message: Attention...
     image: {fileID: 0}
     timingForReadIt: 0
+  - iconeIndex: 3
+    isAPhoto: 0
+    message: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH
+    image: {fileID: 0}
+    timingForReadIt: 0
+  - iconeIndex: 3
+    isAPhoto: 0
+    message: AAAAAAAaaaaaaaaa
+    image: {fileID: 0}
+    timingForReadIt: 0.2
+  - iconeIndex: 3
+    isAPhoto: 0
+    message: aaaaaaaah...
+    image: {fileID: 0}
+    timingForReadIt: 0.2
+  - iconeIndex: 3
+    isAPhoto: 0
+    message: a.......
+    image: {fileID: 0}
+    timingForReadIt: 0.2
+  - iconeIndex: 3
+    isAPhoto: 0
+    message: Ah.
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 3
+    isAPhoto: 0
+    message: "Je suis gu\xE9ri ! Merci heros ! Bonne journ\xE9e  !"
+    image: {fileID: 0}
+    timingForReadIt: 4
   - iconeIndex: 0
     isAPhoto: 0
-    message: 
+    message: "Ah ! Attends ! Je t'ai bris\xE9 l'autre jam... zut, il est d\xE9j\xE0
+      partie."
     image: {fileID: 0}
-    timingForReadIt: 0
+    timingForReadIt: 3
   - iconeIndex: 0
     isAPhoto: 0
-    message: 
+    message: ...
     image: {fileID: 0}
-    timingForReadIt: 0
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Bah. Il reviendra !
+    image: {fileID: 0}
+    timingForReadIt: 3
   setUnlockIfForce: []
