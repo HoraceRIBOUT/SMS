@@ -15,9 +15,14 @@ public class Balance : MonoBehaviour
     public SpriteRenderer allPart;
     public float colorSpeed = 3f;
 
+    private bool freeze = false;
+
     // Update is called once per frame
     void Update()
     {
+        if (freeze)
+            return;
+
         float zAngle = this.transform.rotation.eulerAngles.z;
         if (zAngle > 180)
             zAngle -= 360;
@@ -31,6 +36,17 @@ public class Balance : MonoBehaviour
         Color col = gradient.Evaluate(lerp);
         col.a = arrow.color.a;
         arrow.color = col;
+    }
+
+    public void StopAllMove()
+    {
+        _rgbd.constraints = RigidbodyConstraints2D.FreezeAll;
+        freeze = true;
+    }
+    public void ResumeAllMove()
+    {
+        _rgbd.constraints = RigidbodyConstraints2D.FreezePosition;
+        freeze = false;
     }
 
     public void SetTransparency(float opacity)

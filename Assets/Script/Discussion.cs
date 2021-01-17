@@ -8,7 +8,7 @@ public class Discussion : MonoBehaviour
     public GameObject discussionFolder;
 
     public List<Sprite> iconList = new List<Sprite>();
-    public List<Sprite> photoList = new List<Sprite>();
+    //public List<Sprite> photoList = new List<Sprite>();
 
     [Header("All Creation")]
     public List<RectTransform> messageCreated = new List<RectTransform>();
@@ -24,6 +24,9 @@ public class Discussion : MonoBehaviour
 
     public void AddAMessage(string message, int icon, bool heros)
     {
+        if (icon == -1)
+            AddADescription(message);
+
         GameObject gO = Instantiate(prefabDiscussion, Vector3.zero, Quaternion.identity, discussionFolder.transform);
         float height =  gO.GetComponent<Message>().SetText(message, iconList[icon], heros);
         MoveEveryPastMessageFrom(height);
@@ -32,10 +35,10 @@ public class Discussion : MonoBehaviour
     }
 
 
-    public void AddAnImage(int imageIndex, int icon, bool heros)
+    public void AddAnImage(Sprite imageSprite, int icon, bool heros)
     {
         GameObject gO = Instantiate(prefabDiscussion, Vector3.zero, Quaternion.identity, discussionFolder.transform);
-        float height = gO.GetComponent<Message>().SetImage(photoList[imageIndex], iconList[icon], heros);
+        float height = gO.GetComponent<Message>().SetImage(imageSprite, iconList[icon], heros);
         MoveEveryPastMessageFrom(height);
 
         messageCreated.Add(gO.GetComponent<RectTransform>());

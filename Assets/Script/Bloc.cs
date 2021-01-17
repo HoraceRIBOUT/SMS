@@ -27,6 +27,7 @@ public class Bloc : MonoBehaviour
 
     public List<SpriteRenderer> myBox;
 
+    public bool freeze = false;
 
     public Color brown;
     public float colorSpeed = 1;
@@ -70,6 +71,10 @@ public class Bloc : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (freeze)
+            return;
+
+
         if (activeBloc)
         {
             Vector3 currentSpeed = speed;
@@ -210,12 +215,17 @@ public class Bloc : MonoBehaviour
     public void StopAllMove()
     {
         velocityMemory = _rgbd.velocity;
-        _rgbd.constraints = RigidbodyConstraints2D.FreezeAll;   
+        _rgbd.constraints = RigidbodyConstraints2D.FreezeAll;
+        _rgbd.velocity = Vector2.zero;
+        _rgbd.gravityScale = 0;
+        freeze = true;
     }
-    public void ResumerAllMove()
+    public void ResumeAllMove()
     {
         _rgbd.constraints = RigidbodyConstraints2D.None;
         _rgbd.velocity = velocityMemory;
+        _rgbd.gravityScale = 1;
+        freeze = false;
     }
 
 

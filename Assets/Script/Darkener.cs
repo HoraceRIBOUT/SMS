@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Darkener : MonoBehaviour
 {
-    public bool active = true;
+    public bool active = false;
 
     public Animator _animator;
 

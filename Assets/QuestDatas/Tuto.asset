@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5b1031973d947418a82c23eaec1ba6, type: 3}
+  m_Name: Tuto
+  m_EditorClassIdentifier: 
+  id: Tuto
+  messages:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Hello
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Just do it
+    image: {fileID: 0}
+    timingForReadIt: 4
+  timerForQuest: 15
+  messageIfMagic:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Yeah ! Magic !
+    image: {fileID: 0}
+    timingForReadIt: 4
+  setUnlockIfMagic:
+  - {fileID: 11400000, guid: 7f4007037728dbe4ea5d2805073bf551, type: 2}
+  messageIfForce:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Yeah ! Strenght !
+    image: {fileID: 0}
+    timingForReadIt: 4
+  setUnlockIfForce:
+  - {fileID: 11400000, guid: 7f4007037728dbe4ea5d2805073bf551, type: 2}

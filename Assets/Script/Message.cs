@@ -9,6 +9,7 @@ public class Message : MonoBehaviour
 
     public List<GameObject> leftGO;
     public List<GameObject> rightGO;
+    public List<GameObject> descGO;
 
     public TMPro.TMP_Text textGO;
     public Image imageGO;
@@ -27,15 +28,13 @@ public class Message : MonoBehaviour
         iconRight.sprite = icon;
 
         foreach (GameObject gO in leftGO)
-        {
             gO.SetActive(heros);
-        }
         foreach (GameObject gO in rightGO)
-        {
             gO.SetActive(!heros);
-        }
+        foreach (GameObject gO in descGO)
+            gO.SetActive(false);
 
-        Debug.Log("Height = " + height + " : " + rectTr.sizeDelta.x);
+//        Debug.Log("Height = " + height + " : " + rectTr.sizeDelta.x);
         rectTr.sizeDelta = new Vector2(rectTr.sizeDelta.x, height);
     }
 
@@ -47,6 +46,9 @@ public class Message : MonoBehaviour
             gO.SetActive(false);
         foreach (GameObject gO in rightGO)
             gO.SetActive(false);
+        foreach (GameObject gO in descGO)
+            gO.SetActive(true);
+
 
         Debug.Log("Height = " + height + " : " + rectTr.sizeDelta.x);
         rectTr.sizeDelta = new Vector2(rectTr.sizeDelta.x, height);

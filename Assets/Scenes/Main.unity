@@ -893,7 +893,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 01
+  m_text: '00
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc7ddbd2f65fd8f4cbe7d47c3de90e2b, type: 2}
   m_sharedMaterial: {fileID: -3188091643815328648, guid: dc7ddbd2f65fd8f4cbe7d47c3de90e2b, type: 2}
@@ -1708,9 +1710,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 97eb6ffefda390b408fa6a80ff92fe04, type: 3}
   - {fileID: 21300000, guid: 1a7f44e0430f22845ac70368329b6cdb, type: 3}
   - {fileID: 21300000, guid: 1176fe3d9351a264d85257fce4053500, type: 3}
-  photoList:
-  - {fileID: 21300000, guid: 828ea2683a033a746b4edfc6603ef8bb, type: 3}
-  - {fileID: 21300000, guid: b115b735c7ef7184ab7a44a023fbbddf, type: 3}
   messageCreated: []
   speed: 5
   messageCurve:
@@ -2130,6 +2129,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   discuss: {fileID: 849341112}
+  spawner: {fileID: 117892036}
+  timer: {fileID: 1449652157}
+  currentState: 0
+  questDataFullDeck:
+  - {fileID: 11400000, guid: c758ff6d8ce65af41968b2930a1388bb, type: 2}
+  currentQuestDeck: []
+  currentQuest: {fileID: 0}
+  setNameAlreadyUnlock: []
 --- !u!4 &1238328534
 Transform:
   m_ObjectHideFlags: 0
@@ -2368,6 +2375,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1449652155}
+  - component: {fileID: 1449652157}
+  - component: {fileID: 1449652156}
   m_Layer: 5
   m_Name: Timer
   m_TagString: Untagged
@@ -2397,6 +2406,39 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1449652156
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449652154}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 55cdc76e9610a794cb1aac4f7d88ebb5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1449652157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449652154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cc3a3c044e82134da9d87f950a1a327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animatork: {fileID: 1449652156}
+  timerText: {fileID: 380487696}
 --- !u!1 &1581712675
 GameObject:
   m_ObjectHideFlags: 0

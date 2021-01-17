@@ -677,6 +677,8 @@ MonoBehaviour:
   rightGO:
   - {fileID: 5656959242291924669}
   - {fileID: 5656959242945349491}
+  descGO:
+  - {fileID: 283906256714535065}
   textGO: {fileID: 5656959243744844246}
   imageGO: {fileID: 2916633082154177777}
   imageRect: {fileID: 409295330667128891}

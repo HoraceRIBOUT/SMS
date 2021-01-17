@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5b1031973d947418a82c23eaec1ba6, type: 3}
+  m_Name: GobelinBlesse
+  m_EditorClassIdentifier: 
+  id: GobelinBlesse
+  messages:
+  - iconeIndex: 3
+    isAPhoto: 1
+    message: 
+    image: {fileID: 21300000, guid: 828ea2683a033a746b4edfc6603ef8bb, type: 3}
+    timingForReadIt: 4
+  - iconeIndex: 3
+    isAPhoto: 0
+    message: T'as vu ?
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 3
+    isAPhoto: 0
+    message: C'est mon dessin ?
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 3
+    isAPhoto: 0
+    message: Rend le vivant, stp.
+    image: {fileID: 0}
+    timingForReadIt: 4
+  timerForQuest: 5
+  messageIfMagic:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: 
+    image: {fileID: 0}
+    timingForReadIt: 0
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: 
+    image: {fileID: 0}
+    timingForReadIt: 0
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: 
+    image: {fileID: 0}
+    timingForReadIt: 0
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: 
+    image: {fileID: 0}
+    timingForReadIt: 0
+  setUnlockIfMagic: []
+  messageIfForce:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: 
+    image: {fileID: 0}
+    timingForReadIt: 0
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: 
+    image: {fileID: 0}
+    timingForReadIt: 0
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: 
+    image: {fileID: 0}
+    timingForReadIt: 0
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: 
+    image: {fileID: 0}
+    timingForReadIt: 0
+  setUnlockIfForce: []

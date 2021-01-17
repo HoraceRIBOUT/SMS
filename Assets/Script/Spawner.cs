@@ -29,8 +29,30 @@ public class Spawner : MonoBehaviour
 
     public void Start()
     {
-        SpawnBloc();
+        //SpawnBloc();
+        SetTransparent();
     }
+
+    public void StopAllBloc()
+    {
+        Debug.Log("Stop all move");
+        foreach(Bloc bloc in allCurrentBloc)
+        {
+            bloc.StopAllMove();
+        }
+        balance.StopAllMove();
+    }
+
+    public void ResumeAllBloc()
+    {
+        Debug.Log("Resume all move");
+        foreach (Bloc bloc in allCurrentBloc)
+        {
+            bloc.ResumeAllMove();
+        }
+        balance.ResumeAllMove();
+    }
+
 
     public void ActiveBlocGoLeft()
     {
@@ -89,6 +111,15 @@ public class Spawner : MonoBehaviour
         darkener.Activate();
 
        
+    }
+
+    public bool GetBalanceResult()
+    {
+        float zAngle = balance.transform.rotation.eulerAngles.z;
+        if (zAngle > 180)
+            zAngle -= 360;
+
+        return zAngle > 0;
     }
 
 }
