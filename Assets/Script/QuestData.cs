@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using MyBox;
+using Sirenix.OdinInspector;
 
 [CreateAssetMenu(fileName = "Quest", menuName = "ScriptableObjects/QuestData", order = 1)]
 public class QuestData : ScriptableObject
@@ -38,11 +38,16 @@ public class QuestData : ScriptableObject
     {
         public iconeIndex iconeIndex = iconeIndex.inconnu;
         public bool isAPhoto = false;
+        [HideIf("isAPhoto")]
+        [TextArea(1,6)]
         public string message = "";
+
+        [ShowIf("isAPhoto")]
         public Sprite image = null;
 
         public float timingForReadIt = 3f;
     }
+    
 
     public List<Message> messages = new List<Message>();
     public float timerForQuest = 15f;

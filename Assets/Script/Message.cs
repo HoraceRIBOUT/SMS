@@ -36,6 +36,8 @@ public class Message : MonoBehaviour
 
 //        Debug.Log("Height = " + height + " : " + rectTr.sizeDelta.x);
         rectTr.sizeDelta = new Vector2(rectTr.sizeDelta.x, height);
+
+        endHeight = rectTr.anchoredPosition;
     }
 
     public void Init(float height)
@@ -52,6 +54,8 @@ public class Message : MonoBehaviour
 
         Debug.Log("Height = " + height + " : " + rectTr.sizeDelta.x);
         rectTr.sizeDelta = new Vector2(rectTr.sizeDelta.x, height);
+
+        endHeight = rectTr.anchoredPosition;
     }
 
 
@@ -101,5 +105,33 @@ public class Message : MonoBehaviour
         return rectTr.sizeDelta.y;
 
     }
+
+    public Vector2 endHeight;
+
+    public void MoveUp(float height, float speed, AnimationCurve messageCurve)
+    {
+        StopAllCoroutines();
+        StartCoroutine(MoveOneMessage(height, rectTr, speed, messageCurve));
+    }
+
+    public IEnumerator MoveOneMessage(float height, RectTransform message, float speed, AnimationCurve messageCurve)
+    {
+        float lerp = 0;
+        Vector2 startHeight = message.anchoredPosition;
+        endHeight = endHeight + Vector2.up * height;
+        while (lerp < 1)
+        {
+            lerp += Time.deltaTime * speed;
+            float interpolatedLerp = messageCurve.Evaluate(lerp);
+            Vector2 finalHeight = Vector2.LerpUnclamped(startHeight, endHeight, interpolatedLerp);
+
+            message.anchoredPosition = finalHeight;
+
+            yield return new WaitForSeconds(0.01f);
+        }
+
+        message.anchoredPosition = endHeight;
+    }
+
 
 }

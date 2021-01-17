@@ -11,7 +11,7 @@ public class Discussion : MonoBehaviour
     //public List<Sprite> photoList = new List<Sprite>();
 
     [Header("All Creation")]
-    public List<RectTransform> messageCreated = new List<RectTransform>();
+    public List<Message> messageCreated = new List<Message>();
 
     public void AddADescription(string message)
     {
@@ -19,7 +19,7 @@ public class Discussion : MonoBehaviour
         float height = gO.GetComponent<Message>().SetText(message);
         MoveEveryPastMessageFrom(height);
 
-        messageCreated.Add(gO.GetComponent<RectTransform>());
+        messageCreated.Add(gO.GetComponent<Message>());
     }
 
     public void AddAMessage(string message, int icon, bool heros)
@@ -31,7 +31,7 @@ public class Discussion : MonoBehaviour
         float height =  gO.GetComponent<Message>().SetText(message, iconList[icon], heros);
         MoveEveryPastMessageFrom(height);
 
-        messageCreated.Add(gO.GetComponent<RectTransform>());
+        messageCreated.Add(gO.GetComponent<Message>());
     }
 
 
@@ -41,46 +41,26 @@ public class Discussion : MonoBehaviour
         float height = gO.GetComponent<Message>().SetImage(imageSprite, iconList[icon], heros);
         MoveEveryPastMessageFrom(height);
 
-        messageCreated.Add(gO.GetComponent<RectTransform>());
+        messageCreated.Add(gO.GetComponent<Message>());
     }
 
     public void MoveEveryPastMessageFrom(float height)
     {
-        StopAllCoroutines();
-        StartCoroutine(MoveEveryPastMessage(height, new List<RectTransform>(messageCreated)));
-        
+        StartCoroutine(MoveEveryPastMessage(height, new List<Message>(messageCreated)));
     }
 
     public float speed = 1f;
     public AnimationCurve messageCurve;
 
-    public IEnumerator MoveEveryPastMessage(float height, List<RectTransform> messages)
+    public IEnumerator MoveEveryPastMessage(float height, List<Message> messages)
     {
         messages.Reverse();
-        foreach (RectTransform rectTr in messages)
+        foreach (Message mes in messages)
         {
-            StartCoroutine(MoveOneMessage(height, rectTr));
+            mes.MoveUp(height, speed, messageCurve);
             yield return new WaitForSeconds(0.05f);
         }
     }
 
-    public IEnumerator MoveOneMessage(float height, RectTransform message)
-    {
-        float lerp = 0;
-        Vector2 startHeight = message.anchoredPosition;
-        Vector2 endHeight = message.anchoredPosition + Vector2.up * height;
-        while (lerp < 1)
-        {
-            lerp += Time.deltaTime * speed;
-            float interpolatedLerp = messageCurve.Evaluate(lerp);
-            Vector2 finalHeight = Vector2.LerpUnclamped(startHeight, endHeight, interpolatedLerp);
-
-            message.anchoredPosition = finalHeight;
-
-            yield return new WaitForSeconds(0.01f);
-        }
-
-        message.anchoredPosition = endHeight;
-    }
 
 }
