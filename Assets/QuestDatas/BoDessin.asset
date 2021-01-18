@@ -50,7 +50,7 @@ MonoBehaviour:
     message: 
     image: {fileID: 21300000, guid: 7983da93fb80cdc4ab5a077f4191d0ba, type: 3}
     timingForReadIt: 3
-  timerForQuest: 6
+  timerForQuest: 12
   messageIfMagic:
   - iconeIndex: 0
     isAPhoto: 0

@@ -38,7 +38,7 @@ MonoBehaviour:
     message: Alors, qu'allez vous choisir maintenant ?
     image: {fileID: 0}
     timingForReadIt: 3
-  timerForQuest: 8
+  timerForQuest: 12
   messageIfMagic:
   - iconeIndex: 16
     isAPhoto: 0
