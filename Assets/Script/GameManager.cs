@@ -107,12 +107,14 @@ public class GameManager : MonoBehaviour
         if (magic)
         {
             discuss.AddADescription("Vous avez décidez d'utilisez la magie !", magicMessageColor);
+            audioManager.AddMagic();
             yield return new WaitForSeconds(2f);
             StartCoroutine(DisplayQuestResult(quest.messageIfMagic, quest.setUnlockIfMagic));
         }
         else
         {
             discuss.AddADescription("Vous avez décidez d'utilisez la force !", forceMessageColor);
+            audioManager.AddForce();
             yield return new WaitForSeconds(2f);
             StartCoroutine(DisplayQuestResult(quest.messageIfForce, quest.setUnlockIfForce));
         }
