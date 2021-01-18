@@ -42,6 +42,11 @@ MonoBehaviour:
     message: avec des oreilles pointues..
     image: {fileID: 0}
     timingForReadIt: 3
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: "Dois je y voir une supercherie ? Hmm, elle est quand m\xEAme attirante"
+    image: {fileID: 0}
+    timingForReadIt: 4
   timerForQuest: 9
   messageIfMagic:
   - iconeIndex: 0
