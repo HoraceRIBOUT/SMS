@@ -29,6 +29,10 @@ public class QuestData : ScriptableObject
         choca = 15,
         horace,
         horace2,
+        doggo,
+        doggoHappy,
+        gobelinChild = 20,
+        magician,
 
     }
 
