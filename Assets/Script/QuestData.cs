@@ -33,6 +33,8 @@ public class QuestData : ScriptableObject
         doggoHappy,
         gobelinChild = 20,
         magician,
+        bebe,
+        poisson,
 
     }
 

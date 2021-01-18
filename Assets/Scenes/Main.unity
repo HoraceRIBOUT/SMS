@@ -1725,6 +1725,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f1088f01898396547bfe5dbfab1a1637, type: 3}
   - {fileID: 21300000, guid: 04bfeacb227244c468650dcd0d28cb6d, type: 3}
   - {fileID: 21300000, guid: 5fd6df44ade2ffe4bb16ad8a367594a2, type: 3}
+  - {fileID: 21300000, guid: 6a4e7a56d109da44fbbb8399119efd00, type: 3}
+  - {fileID: 21300000, guid: ef23e0d6b9ab6114fa30f3c156b87dae, type: 3}
   messageCreated: []
   speed: 5
   messageCurve:
@@ -8127,18 +8129,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5034031701667487803, guid: d3519a9dbfacd9a44b380b4013240d35, type: 3}
-      propertyPath: newSet
-      value: 
-      objectReference: {fileID: 8300000, guid: 321591e249dd66340a6599628dc5ad9d, type: 3}
-    - target: {fileID: 5034031701667487803, guid: d3519a9dbfacd9a44b380b4013240d35, type: 3}
-      propertyPath: messageHeros
-      value: 
-      objectReference: {fileID: 8300000, guid: e96cfafd6effb2e4a88566b5add9d8af, type: 3}
-    - target: {fileID: 5034031701667487803, guid: d3519a9dbfacd9a44b380b4013240d35, type: 3}
-      propertyPath: messageOther
-      value: 
-      objectReference: {fileID: 8300000, guid: a5039ae603de0e744a210c43a781b8c4, type: 3}
     - target: {fileID: 5034031701667487805, guid: d3519a9dbfacd9a44b380b4013240d35, type: 3}
       propertyPath: m_Name
       value: Audio

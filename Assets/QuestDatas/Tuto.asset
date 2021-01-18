@@ -14,30 +14,115 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: Tuto
   messages:
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: 'Bienvenue sur SMS : Strenght and Magic in Synergy'
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 0
+    isAPhoto: 1
+    message: 
+    image: {fileID: 21300000, guid: 5ffdbf373f72d6940a590c7ab2b24edf, type: 3}
+    timingForReadIt: 0
   - iconeIndex: 0
     isAPhoto: 0
-    message: Hello
+    message: Salut !
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "C'est ici que je re\xE7ois mes qu\xEAtes !"
     image: {fileID: 0}
     timingForReadIt: 4
   - iconeIndex: 0
     isAPhoto: 0
-    message: Just do it
+    message: "Par exemple... je suis actuellement coinc\xE9 chez moi..."
     image: {fileID: 0}
     timingForReadIt: 4
+  - iconeIndex: 0
+    isAPhoto: 1
+    message: 
+    image: {fileID: 21300000, guid: fb29d87aa945e7c4f859fc1abafedbe5, type: 3}
+    timingForReadIt: 0
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "On va dire que c'est ma premi\xE8re qu\xEAte !"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Pour remplir une qu\xEAte, vous devez gardez les blocs en \xE9quilibre
+      sur la balance."
+    image: {fileID: 0}
+    timingForReadIt: 8
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "A la fin du timer, la balance se figera, et selon de quel c\xF4t\xE9
+      elle penche, cela d\xE9cidera de comment vous r\xE9solvez la qu\xEAte."
+    image: {fileID: 0}
+    timingForReadIt: 5
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Faites la pencher \xE0 droite pour utiliser la <color=\"red\">FORCE</color>
+      (aussi nomm\xE9 \"les muscles\")."
+    image: {fileID: 0}
+    timingForReadIt: 5
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Faites la pencher \xE0 gauche pour utiliser la <color=\"blue\">MAGIE</color>
+      (aussi appel\xE9 \"votre cervelle\")."
+    image: {fileID: 0}
+    timingForReadIt: 5
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Allez... Comment j'ouvre cette porte moi ?
+    image: {fileID: 0}
+    timingForReadIt: 3
   timerForQuest: 15
   messageIfMagic:
-  - iconeIndex: 0
+  - iconeIndex: -1
     isAPhoto: 0
-    message: Yeah ! Magic !
+    message: Par inadvertence, vous lancez un sort qui rend la porte consciente !
     image: {fileID: 0}
     timingForReadIt: 4
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Euh... Puis-je sortir s'il vous pla\xEEt ?"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 1
+    message: 
+    image: {fileID: 21300000, guid: c58bd9c80dac6c9479f008b2f1da5255, type: 3}
+    timingForReadIt: 0
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "La porte s'ouvre, vous invitant \xE0 sortir."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Ep\xE9rons qu'elle soit aussi gentille ce soir en rentrant !"
+    image: {fileID: 0}
+    timingForReadIt: 3
   setUnlockIfMagic:
   - {fileID: 11400000, guid: 7f4007037728dbe4ea5d2805073bf551, type: 2}
   messageIfForce:
   - iconeIndex: 0
+    isAPhoto: 1
+    message: 
+    image: {fileID: 21300000, guid: 398e685eaf8e2b5499b852ab4f797143, type: 3}
+    timingForReadIt: 0
+  - iconeIndex: -1
     isAPhoto: 0
-    message: Yeah ! Strenght !
+    message: "En bandant vos muscles vous serrez la poign\xE9e et arrachez la porte
+      et le mur qui va avec."
     image: {fileID: 0}
     timingForReadIt: 4
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: ... au moins, j'ai une vue direct sur la ville depuis mon lit...
+    image: {fileID: 0}
+    timingForReadIt: 3
   setUnlockIfForce:
   - {fileID: 11400000, guid: 7f4007037728dbe4ea5d2805073bf551, type: 2}

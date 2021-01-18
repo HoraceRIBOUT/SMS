@@ -19,6 +19,7 @@ public class Message : MonoBehaviour
     public Image iconRight;
 
     public float margin = 11;
+    public float marginImage = 1.3f;
 
     public void Init(Sprite icon, bool heros, float height)
     {
@@ -97,7 +98,7 @@ public class Message : MonoBehaviour
 
     public float SetImage(Sprite imageIndex, Sprite icon, bool heros)
     {
-        float height = imageRect.rect.width;
+        float height = imageRect.rect.width * marginImage;
         Init(icon, heros, height);
 
         textGO.gameObject.SetActive(false);

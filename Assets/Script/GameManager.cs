@@ -62,17 +62,20 @@ public class GameManager : MonoBehaviour
     public void TreatCurrentQuest()
     {
         questNumber++;
-        StartCoroutine(DiplayQuestRequest(currentQuest));
+        StartCoroutine(DiplayQuestRequest(currentQuest, true));
         //wait for end of discussion
 
     }
 
 
-    public IEnumerator DiplayQuestRequest(QuestData quest)
+    public IEnumerator DiplayQuestRequest(QuestData quest, bool firstQuest = false)
     {
-        discuss.AddADescription("Vous avez reçu une nouvelle quête.");
         currentState = gameState.message;
-        yield return new WaitForSeconds(2f);
+        if (!firstQuest)
+        {
+            discuss.AddADescription("Vous avez reçu une nouvelle quête.");
+            yield return new WaitForSeconds(2f);
+        }
         List<QuestData.Message> messageList = quest.messages;
         foreach (QuestData.Message message in messageList)
         {

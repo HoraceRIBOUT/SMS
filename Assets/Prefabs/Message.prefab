@@ -580,7 +580,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 1024
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -685,6 +685,7 @@ MonoBehaviour:
   iconLeft: {fileID: 3502898817286656060}
   iconRight: {fileID: 5656959242945349489}
   margin: 11
+  marginImage: 1.2
   endHeight: {x: 0, y: 0}
 --- !u!95 &8734313213191970837
 Animator:
