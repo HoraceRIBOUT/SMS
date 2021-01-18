@@ -58,7 +58,7 @@ MonoBehaviour:
     message: Mais qu'est ce q.. ?
     image: {fileID: 0}
     timingForReadIt: 1
-  - iconeIndex: 1
+  - iconeIndex: -1
     isAPhoto: 0
     message: "A peine avez touch\xE9 \xE0 cette inscription, que trois personnes
       \xE9tranges en sortent et se cassent tr\xE8s rapidement, vous n'avez pas le

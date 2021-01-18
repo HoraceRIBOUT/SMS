@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: BoDessin
   messages:
-  - iconeIndex: 16
+  - iconeIndex: 7
     isAPhoto: 0
     message: Bonjour! Vous avez 5 minutes ?
     image: {fileID: 0}
@@ -30,7 +30,7 @@ MonoBehaviour:
       de contact j'esp\xE8re ?!"
     image: {fileID: 0}
     timingForReadIt: 3
-  - iconeIndex: 16
+  - iconeIndex: 7
     isAPhoto: 0
     message: Non, non, rassurez vous. C'est pour bien pire!
     image: {fileID: 0}
@@ -40,11 +40,16 @@ MonoBehaviour:
     message: Ho!
     image: {fileID: 0}
     timingForReadIt: 1
-  - iconeIndex: 1
+  - iconeIndex: 7
     isAPhoto: 0
     message: "J'ai fais un dessin \xE9trange et j'aimerai votre avis dessus!"
     image: {fileID: 0}
     timingForReadIt: 4
+  - iconeIndex: 7
+    isAPhoto: 1
+    message: 
+    image: {fileID: 21300000, guid: 7983da93fb80cdc4ab5a077f4191d0ba, type: 3}
+    timingForReadIt: 3
   timerForQuest: 6
   messageIfMagic:
   - iconeIndex: 0
@@ -53,7 +58,7 @@ MonoBehaviour:
       une petite modification ?"
     image: {fileID: 0}
     timingForReadIt: 3
-  - iconeIndex: 16
+  - iconeIndex: 7
     isAPhoto: 0
     message: " Bien-s\xFBr, faites donc. Je pourrais toujours changer le dessin si
       \xE7a ne me pla\xEEt pas."
@@ -63,6 +68,11 @@ MonoBehaviour:
     isAPhoto: 0
     message: "Votre sortil\xE8ge rend le dessin un peu trop sexy."
     image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: -1
+    isAPhoto: 1
+    message: 
+    image: {fileID: 21300000, guid: 1c60852aa50c65842a6af8ad3c3f34cb, type: 3}
     timingForReadIt: 3
   - iconeIndex: -1
     isAPhoto: 0
@@ -111,7 +121,7 @@ MonoBehaviour:
     message: OUPS!
     image: {fileID: 0}
     timingForReadIt: 1
-  - iconeIndex: 16
+  - iconeIndex: 7
     isAPhoto: 0
     message: HA!!
     image: {fileID: 0}

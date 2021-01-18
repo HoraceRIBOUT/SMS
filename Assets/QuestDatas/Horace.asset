@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5b1031973d947418a82c23eaec1ba6, type: 3}
+  m_Name: Horace
+  m_EditorClassIdentifier: 
+  id: Horace
+  messages:
+  - iconeIndex: 16
+    isAPhoto: 0
+    message: "Hello ! Vous \xEAtes tomb\xE9 sur la messagerie des d\xE9vellopeurs,
+      dommage pour vous !"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 15
+    isAPhoto: 0
+    message: "On esp\xE8re tous que vous avez appr\xE9ci\xE9s de faire cette premi\xE8re
+      game jam !! Ce fut un grand plaisir de voir autant de monde y participer !"
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 7
+    isAPhoto: 0
+    message: "On a autant pris plaisir \xE0 faire ce jeu que vous ! Vous voir aussi
+      actif et cr\xE9er en \xE9quipe d'aussi beau projets, c'est pour nous le plus
+      important \xE0 vous apprendre !"
+    image: {fileID: 0}
+    timingForReadIt: 5
+  - iconeIndex: 16
+    isAPhoto: 0
+    message: Alors, qu'allez vous choisir maintenant ?
+    image: {fileID: 0}
+    timingForReadIt: 3
+  timerForQuest: 8
+  messageIfMagic:
+  - iconeIndex: 16
+    isAPhoto: 0
+    message: Vous voulez que je fasse de la magie ?
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 16
+    isAPhoto: 0
+    message: "Je sais coder de belles choses, mais quand m\xEAme.."
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 16
+    isAPhoto: 0
+    message: Ah ! Je sais, je vais incanter le plus beau sort de magie que j'ai appris,
+      rien que pour vous !
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 16
+    isAPhoto: 0
+    message: "Bonnes chances \xE0 vous tous pour vos concours !! On vous souhaites
+      bon courage !"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 16
+    isAPhoto: 0
+    message: "Et que vous profitiez de votre concours pour apprendre le plus de chose,
+      \xE0 la fois sur votre passion et sur vous  m\xEAme !"
+    image: {fileID: 0}
+    timingForReadIt: 4
+  setUnlockIfMagic: []
+  messageIfForce:
+  - iconeIndex: 17
+    isAPhoto: 0
+    message: Hmmm, vous voulez me voir flex
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 17
+    isAPhoto: 0
+    message: D'accord !
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 17
+    isAPhoto: 0
+    message: '*Mega Flex des doigts*'
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 17
+    isAPhoto: 0
+    message: Pas mal non ?
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 17
+    isAPhoto: 0
+    message: Bon je sais, c'est naze..
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 17
+    isAPhoto: 0
+    message: Mais laisser moi vous dire quelque chose qui va vous faire flexer !
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 17
+    isAPhoto: 0
+    message: "Bonnes chances \xE0 vous tous pour vos concours !! On vous souhaites
+      bon courage !"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 17
+    isAPhoto: 0
+    message: "Et que vous profitiez de votre concours pour apprendre le plus de chose,
+      \xE0 la fois sur votre passion et sur vous  m\xEAme !"
+    image: {fileID: 0}
+    timingForReadIt: 4
+  setUnlockIfForce: []

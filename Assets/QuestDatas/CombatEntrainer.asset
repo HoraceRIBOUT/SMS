@@ -20,7 +20,7 @@ MonoBehaviour:
       de St.Bagneux
     image: {fileID: 0}
     timingForReadIt: 3
-  - iconeIndex: 1
+  - iconeIndex: 20
     isAPhoto: 0
     message: 'Jte Fume en 1v1, ez rekt, v1 affronter mon regard dan la Joute Royal
       ct''aprem !! '
@@ -34,18 +34,18 @@ MonoBehaviour:
       que tu es K\xE9vin."
     image: {fileID: 0}
     timingForReadIt: 3
-  - iconeIndex: 1
+  - iconeIndex: 20
     isAPhoto: 0
     message: Sniff..maieuh..
     image: {fileID: 0}
     timingForReadIt: 2
-  - iconeIndex: 1
+  - iconeIndex: 20
     isAPhoto: 0
     message: "Ma maman m'a toujours dis que j'\xE9tait un gentil garcon, vous n'aviez
       pas \xE0 \xEAtre aussi m\xE9chant.."
     image: {fileID: 0}
     timingForReadIt: 3
-  - iconeIndex: 1
+  - iconeIndex: 20
     isAPhoto: 0
     message: ..bouhouhou...
     image: {fileID: 0}

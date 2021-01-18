@@ -24,6 +24,11 @@ MonoBehaviour:
     message: "\"Vous voyez un trou de la forme d'un gobelin de 4 m\xE8tres de haut"
     image: {fileID: 0}
     timingForReadIt: 3
+  - iconeIndex: 1
+    isAPhoto: 1
+    message: 
+    image: {fileID: 21300000, guid: dd4014f8316bab8418747c8bb2306228, type: 3}
+    timingForReadIt: 3
   timerForQuest: 9
   messageIfMagic:
   - iconeIndex: -1

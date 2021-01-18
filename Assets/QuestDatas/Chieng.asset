@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: Chieng
   messages:
-  - iconeIndex: 1
+  - iconeIndex: 18
     isAPhoto: 0
     message: wouaf wouaf
     image: {fileID: 0}
@@ -29,7 +29,7 @@ MonoBehaviour:
     message: T'es tout mignon toi hein ?
     image: {fileID: 0}
     timingForReadIt: 3
-  - iconeIndex: 1
+  - iconeIndex: 19
     isAPhoto: 0
     message: wouaf wouaf
     image: {fileID: 0}
@@ -41,7 +41,7 @@ MonoBehaviour:
     message: Qui qui c'est qui est le plus beau ?
     image: {fileID: 0}
     timingForReadIt: 2
-  - iconeIndex: 1
+  - iconeIndex: 18
     isAPhoto: 0
     message: 'Wouaf..wouaf waf '
     image: {fileID: 0}
@@ -51,7 +51,7 @@ MonoBehaviour:
     message: 'Qui qui c''est qui est le plus gentil des chienchien '
     image: {fileID: 0}
     timingForReadIt: 2
-  - iconeIndex: 1
+  - iconeIndex: 19
     isAPhoto: 0
     message: Wouafff...arf, arf wouaaaaf
     image: {fileID: 0}
@@ -67,7 +67,7 @@ MonoBehaviour:
     message: Awww
     image: {fileID: 0}
     timingForReadIt: 1
-  - iconeIndex: 1
+  - iconeIndex: 18
     isAPhoto: 0
     message: (Stop, pas plus, je ne peux supporter !
     image: {fileID: 0}
@@ -77,7 +77,7 @@ MonoBehaviour:
     message: WUUZ A GOOOD BOOOIIII ?
     image: {fileID: 0}
     timingForReadIt: 1
-  - iconeIndex: 1
+  - iconeIndex: 18
     isAPhoto: 0
     message: ...Wouarbgabrlarrrrrg..*paf
     image: {fileID: 0}
@@ -95,7 +95,7 @@ MonoBehaviour:
     message: "Tu veux le b\xE2ton ?"
     image: {fileID: 0}
     timingForReadIt: 2
-  - iconeIndex: 1
+  - iconeIndex: 19
     isAPhoto: 0
     message: Wouaf wouaf !!
     image: {fileID: 0}
@@ -105,7 +105,7 @@ MonoBehaviour:
     message: Awww, tu veux le baton ?
     image: {fileID: 0}
     timingForReadIt: 1
-  - iconeIndex: 1
+  - iconeIndex: 19
     isAPhoto: 0
     message: Wouaf, arwouaf !!
     image: {fileID: 0}
@@ -115,7 +115,7 @@ MonoBehaviour:
     message: "Tu veux le b\xE2ton ?"
     image: {fileID: 0}
     timingForReadIt: 1
-  - iconeIndex: 1
+  - iconeIndex: 18
     isAPhoto: 0
     message: '... '
     image: {fileID: 0}
@@ -125,18 +125,18 @@ MonoBehaviour:
     message: "Tu veux le b\xE2ton ?"
     image: {fileID: 0}
     timingForReadIt: 1
-  - iconeIndex: 1
+  - iconeIndex: 18
     isAPhoto: 0
     message: "Ok, \xE9coute, je suis une esp\xE8ce intelligente, je n'ai pas besoin
       qu'on me r\xE9p\xE8te plusieurs fois la m\xEAme chose"
     image: {fileID: 0}
     timingForReadIt: 3
-  - iconeIndex: 1
+  - iconeIndex: 0
     isAPhoto: 0
     message: '!!'
     image: {fileID: 0}
     timingForReadIt: 2
-  - iconeIndex: 1
+  - iconeIndex: 18
     isAPhoto: 0
     message: Euh, je veux dire, wouaf !
     image: {fileID: 0}
@@ -146,7 +146,7 @@ MonoBehaviour:
     message: ...
     image: {fileID: 0}
     timingForReadIt: 4
-  - iconeIndex: 1
+  - iconeIndex: 18
     isAPhoto: 0
     message: ...
     image: {fileID: 0}
@@ -156,7 +156,7 @@ MonoBehaviour:
     message: "Tu veux le b\xE2ton ?"
     image: {fileID: 0}
     timingForReadIt: 0.5
-  - iconeIndex: 1
+  - iconeIndex: 18
     isAPhoto: 0
     message: "Putain, oui je veux le b\xE2ton ? Bordel, tu veux que je te l'\xE9crive,
       je peux te payer si tu veux, mais donne moi ce b\xE2ton, je le veux !!"

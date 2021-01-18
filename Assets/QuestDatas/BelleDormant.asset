@@ -24,6 +24,11 @@ MonoBehaviour:
     message: "Elle s'est piqu\xE9 sur un rouet et ne se r\xE9veille point !"
     image: {fileID: 0}
     timingForReadIt: 3
+  - iconeIndex: 12
+    isAPhoto: 1
+    message: 
+    image: {fileID: 21300000, guid: 7606565714b6b3a4fbb4e8f528180765, type: 3}
+    timingForReadIt: 3
   timerForQuest: 9
   messageIfMagic:
   - iconeIndex: 0
@@ -49,6 +54,11 @@ MonoBehaviour:
       dans l'autre."
     image: {fileID: 0}
     timingForReadIt: 5
+  - iconeIndex: 1
+    isAPhoto: 1
+    message: 
+    image: {fileID: 21300000, guid: 4f16ce13ee8899c4e879aabb3be65c0d, type: 3}
+    timingForReadIt: 3
   - iconeIndex: -1
     isAPhoto: 0
     message: "Vous d\xE9cidez de ne pas la r\xE9veiller."
