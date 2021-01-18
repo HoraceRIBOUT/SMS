@@ -1457,7 +1457,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
 --- !u!114 &763064811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8078,6 +8078,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5034031701456039111, guid: d3519a9dbfacd9a44b380b4013240d35, type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5034031701667487802, guid: d3519a9dbfacd9a44b380b4013240d35, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -8122,9 +8126,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5034031701667487803, guid: d3519a9dbfacd9a44b380b4013240d35, type: 3}
+      propertyPath: newSet
+      value: 
+      objectReference: {fileID: 8300000, guid: 321591e249dd66340a6599628dc5ad9d, type: 3}
+    - target: {fileID: 5034031701667487803, guid: d3519a9dbfacd9a44b380b4013240d35, type: 3}
+      propertyPath: messageHeros
+      value: 
+      objectReference: {fileID: 8300000, guid: e96cfafd6effb2e4a88566b5add9d8af, type: 3}
+    - target: {fileID: 5034031701667487803, guid: d3519a9dbfacd9a44b380b4013240d35, type: 3}
+      propertyPath: messageOther
+      value: 
+      objectReference: {fileID: 8300000, guid: a5039ae603de0e744a210c43a781b8c4, type: 3}
     - target: {fileID: 5034031701667487805, guid: d3519a9dbfacd9a44b380b4013240d35, type: 3}
       propertyPath: m_Name
       value: Audio
+      objectReference: {fileID: 0}
+    - target: {fileID: 5034031702452589157, guid: d3519a9dbfacd9a44b380b4013240d35, type: 3}
+      propertyPath: m_Volume
+      value: 0.906
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3519a9dbfacd9a44b380b4013240d35, type: 3}
