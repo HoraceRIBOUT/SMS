@@ -102,7 +102,7 @@ MonoBehaviour:
     message: "sniff, d\xE9sol\xE9, je recommence !"
     image: {fileID: 0}
     timingForReadIt: 3
-  - iconeIndex: 1
+  - iconeIndex: 22
     isAPhoto: 0
     message: .ageuuu
     image: {fileID: 0}
@@ -113,7 +113,7 @@ MonoBehaviour:
       ?"
     image: {fileID: 0}
     timingForReadIt: 3
-  - iconeIndex: 1
+  - iconeIndex: 22
     isAPhoto: 0
     message: splbrrrbllblb..bl
     image: {fileID: 0}

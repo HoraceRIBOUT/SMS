@@ -55,6 +55,9 @@ public class Discussion : MonoBehaviour
     {
         PlaySound(heros);
 
+        if (icon == -1)
+            icon = 0;
+
         GameObject gO = Instantiate(prefabDiscussion, Vector3.zero, Quaternion.identity, discussionFolder.transform);
         float height = gO.GetComponent<Message>().SetImage(imageSprite, iconList[icon], heros);
         MoveEveryPastMessageFrom(height);

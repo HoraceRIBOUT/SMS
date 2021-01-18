@@ -210,5 +210,12 @@ public class GameManager : MonoBehaviour
         {
             TrueStart();
         }
+
+
+        if (Input.GetKeyDown(KeyCode.P))
+            Time.timeScale *= 2;
+        if(Input.GetKeyDown(KeyCode.O))
+            Time.timeScale /= 2;
+
     }
 }
