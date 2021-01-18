@@ -69,7 +69,7 @@ MonoBehaviour:
     timingForReadIt: 1
   - iconeIndex: 18
     isAPhoto: 0
-    message: (Stop, pas plus, je ne peux supporter !
+    message: (Stop, pas plus, je ne peux supporter !)
     image: {fileID: 0}
     timingForReadIt: 3
   - iconeIndex: 0

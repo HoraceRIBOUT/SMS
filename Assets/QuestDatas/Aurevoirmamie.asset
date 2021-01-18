@@ -79,7 +79,7 @@ MonoBehaviour:
     message: Qu'est ce que ..!
     image: {fileID: 0}
     timingForReadIt: 3
-  - iconeIndex: 1
+  - iconeIndex: 13
     isAPhoto: 0
     message: "Je me sens bien mais je ne vous appr\xE9cie pas monsieur."
     image: {fileID: 0}

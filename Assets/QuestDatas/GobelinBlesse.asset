@@ -19,7 +19,7 @@ MonoBehaviour:
     message: "Au secours ! J'me suis p\xE9t\xE9 la jambe !"
     image: {fileID: 21300000, guid: 828ea2683a033a746b4edfc6603ef8bb, type: 3}
     timingForReadIt: 4
-  - iconeIndex: 1
+  - iconeIndex: 3
     isAPhoto: 1
     message: 
     image: {fileID: 21300000, guid: 379d826cd1afeb04d825301cbbe41299, type: 3}
@@ -67,7 +67,7 @@ MonoBehaviour:
     message: JE ME SENS... MUSCLE
     image: {fileID: 0}
     timingForReadIt: 3
-  - iconeIndex: 1
+  - iconeIndex: 4
     isAPhoto: 1
     message: 
     image: {fileID: 21300000, guid: 6341417e1aaaf054193b2f4e47aa9c88, type: 3}
