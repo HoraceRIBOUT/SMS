@@ -1725,8 +1725,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f1088f01898396547bfe5dbfab1a1637, type: 3}
   - {fileID: 21300000, guid: 04bfeacb227244c468650dcd0d28cb6d, type: 3}
   - {fileID: 21300000, guid: 5fd6df44ade2ffe4bb16ad8a367594a2, type: 3}
-  - {fileID: 21300000, guid: 6a4e7a56d109da44fbbb8399119efd00, type: 3}
   - {fileID: 21300000, guid: ef23e0d6b9ab6114fa30f3c156b87dae, type: 3}
+  - {fileID: 21300000, guid: 6a4e7a56d109da44fbbb8399119efd00, type: 3}
   messageCreated: []
   speed: 5
   messageCurve:

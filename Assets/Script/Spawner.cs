@@ -90,6 +90,7 @@ public class Spawner : MonoBehaviour
         imfree = false;
 
         allCurrentBloc.Add(bloc);
+
         lastBloc = bloc;
     }
 
