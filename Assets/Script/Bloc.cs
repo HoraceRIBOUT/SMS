@@ -32,6 +32,8 @@ public class Bloc : MonoBehaviour
     public Color brown;
     public float colorSpeed = 1;
 
+    public GameObject particuleDeat;
+
 
     public void Init(int indexOfTheQuest, Color col)
     {
@@ -129,18 +131,15 @@ public class Bloc : MonoBehaviour
         rotateRoutine = null;
     }
     
-    public void ChangeColorToBrown()
-    {
-
-    }
-
     [ContextMenu("Set Brown")]
     public void SetBrown()
     {
-        StartCoroutine(ChangeColorTo(brown));
+        Color col = brown;
+        col.a = myBox[0].color.a;
+        StartCoroutine(ChangeColorTo(col));
     }
 
-    public void SetTransparency ( float opacity)
+    public void SetTransparency (float opacity)
     {
         Color col = myBox[0].color;
         col.a = opacity;
@@ -171,7 +170,7 @@ public class Bloc : MonoBehaviour
     {
         if (timerStopped <= 0)
         {
-            Spawner.instance.SpawnBloc();
+            Spawner.instance.SpawnBloc(questIndex);
             return;
         }
         if (_rgbd.velocity.sqrMagnitude < epsilon * epsilon)
@@ -190,7 +189,7 @@ public class Bloc : MonoBehaviour
         if(bord != null)
         {
             if(timerStopped > 0)
-                Spawner.instance.SpawnBloc();
+                Spawner.instance.SpawnBloc(questIndex);
 
             KillMe();
             return;
@@ -206,7 +205,7 @@ public class Bloc : MonoBehaviour
 //            Debug.Log("Hello : " + timerStopped);
             if (timerStopped == 0)
             {
-                Spawner.instance.SpawnBloc();
+                Spawner.instance.SpawnBloc(questIndex);
             }
         }
     }
@@ -219,6 +218,7 @@ public class Bloc : MonoBehaviour
         _rgbd.velocity = Vector2.zero;
         _rgbd.gravityScale = 0;
         freeze = true;
+        activeBloc = false;
     }
     public void ResumeAllMove()
     {
@@ -231,6 +231,10 @@ public class Bloc : MonoBehaviour
 
     public void KillMe()
     {
+        foreach (SpriteRenderer sR in myBox)
+        {
+            Instantiate(particuleDeat, sR.transform.position, Quaternion.identity, null);
+        }
 
         Spawner.instance.allCurrentBloc.Remove(this);
         Destroy(this.gameObject);

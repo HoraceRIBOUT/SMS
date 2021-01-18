@@ -67,7 +67,7 @@ public class Spawner : MonoBehaviour
     }
 
 
-    public void SpawnBloc()
+    public void SpawnBloc(int questNumber)
     {
         if (!imfree)
             return;
@@ -77,13 +77,34 @@ public class Spawner : MonoBehaviour
 
 
         Color randColo = availableColor[index];//availableColor[Random.Range(0, availableColor.Count)];
-        bloc.Init(1, randColo);
+        bloc.Init(questNumber, randColo);
 
         //bloc;
         imfree = false;
 
         allCurrentBloc.Add(bloc);
         lastBloc = bloc;
+    }
+
+    public void ClearBloc(int questNumber)
+    {
+        List<Bloc> toDestroy = new List<Bloc>();
+        foreach (Bloc bloc in allCurrentBloc)
+        {
+            if(bloc.questIndex == questNumber)
+            {
+                bloc.SetBrown();
+            }
+            else
+            {
+                toDestroy.Add(bloc);
+            }
+        }
+        foreach (Bloc bloc in toDestroy)
+        {
+            bloc.KillMe();
+        }
+
     }
 
 

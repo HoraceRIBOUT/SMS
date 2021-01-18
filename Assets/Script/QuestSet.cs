@@ -7,4 +7,5 @@ public class QuestSet : ScriptableObject
 {
     public string id = "Set Name";
     public List<QuestData> allCardToThatSet = new List<QuestData>();
+    public List<QuestData> cardToRemove = new List<QuestData>();
 }
