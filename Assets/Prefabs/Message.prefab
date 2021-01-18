@@ -547,8 +547,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Bonjour, ici Mediev'app ! De quoi avez vous besoin ?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc7ddbd2f65fd8f4cbe7d47c3de90e2b, type: 2}
-  m_sharedMaterial: {fileID: -3188091643815328648, guid: dc7ddbd2f65fd8f4cbe7d47c3de90e2b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 39610e6c828ca1e48a33164d864a0cfd, type: 2}
+  m_sharedMaterial: {fileID: 3492796798318901146, guid: 39610e6c828ca1e48a33164d864a0cfd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -685,6 +685,7 @@ MonoBehaviour:
   iconLeft: {fileID: 3502898817286656060}
   iconRight: {fileID: 5656959242945349489}
   margin: 11
+  endHeight: {x: 0, y: 0}
 --- !u!95 &8734313213191970837
 Animator:
   serializedVersion: 3

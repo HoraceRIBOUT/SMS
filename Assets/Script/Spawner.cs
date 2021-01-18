@@ -36,10 +36,17 @@ public class Spawner : MonoBehaviour
     public void StopAllBloc()
     {
         Debug.Log("Stop all move");
+        Bloc blocMain = null;
         foreach(Bloc bloc in allCurrentBloc)
         {
-            bloc.StopAllMove();
+            if (bloc.activeBloc)
+                blocMain = bloc;
+            else
+                bloc.StopAllMove();
         }
+        if(blocMain != null)
+            blocMain.KillMe();
+
         balance.StopAllMove();
     }
 
