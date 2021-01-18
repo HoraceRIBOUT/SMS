@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: be531d3998ee4ee42968270cfc36b742, type: 3}
-  m_Name: Set-GobelinMuscle
+  m_Name: Set-Easteregg
   m_EditorClassIdentifier: 
-  id: Gobelin Muscle
+  id: Easteregg
   allCardToThatSet:
-  - {fileID: 11400000, guid: e805f34361247b94a85bf1500624ac41, type: 2}
+  - {fileID: 11400000, guid: 0065ccd970da36a489e4080adf9d6c48, type: 2}
+  - {fileID: 11400000, guid: 728c97e0e2874bf49b843a7d4265050d, type: 2}
   cardToRemove:
-  - {fileID: 11400000, guid: e52c0ec9978ab044d99a937ff2a6b964, type: 2}
+  - {fileID: 11400000, guid: a923f50f1fd2eb448b74bf29b00c6a08, type: 2}

@@ -1,0 +1,186 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5b1031973d947418a82c23eaec1ba6, type: 3}
+  m_Name: Blessure
+  m_EditorClassIdentifier: 
+  id: Blessure
+  messages:
+  - iconeIndex: 9
+    isAPhoto: 0
+    message: Argh..
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Que se passe t-il ?
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 9
+    isAPhoto: 0
+    message: "Je suis gravement bless\xE9, aidez moi !"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Tenez bon, que s'est-il pass\xE9 ?"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Vous vous \xEAtes bless\xE9 en combat ?"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 9
+    isAPhoto: 0
+    message: "Non, je me suis coup\xE9 la main avec un \xE9pluche patate."
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: ...ok, je vais vous aider.
+    image: {fileID: 0}
+    timingForReadIt: 2
+  timerForQuest: 12
+  messageIfMagic:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Je vais vous lancer un sortil\xE8ge de retour dans le temps, sur quelques
+      minutes, et vous serez tout neuf comme avant !"
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 9
+    isAPhoto: 0
+    message: Euh..ok
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Pr\xEAt ?"
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Abra..
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 9
+    isAPhoto: 0
+    message: ..
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: cadab..
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 9
+    isAPhoto: 0
+    message: ...
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: braaa..
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: aaAAtchoum !
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "sniff, d\xE9sol\xE9, je recommence !"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: .ageuuu
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Quoi, mon sort a march\xE9, mais...pourquoi \xEAtes devenu un b\xE9b\xE9
+      ?"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: splbrrrbllblb..bl
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Bon, ben je suppose que je n'a pas le choix.
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Come with me, boi !
+    image: {fileID: 0}
+    timingForReadIt: 3
+  setUnlockIfMagic: []
+  messageIfForce:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Je vais vous recoller la main et la recoudre !
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Accrocher vous, ca va piquer un peu
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 9
+    isAPhoto: 0
+    message: ' ...OUAIIIECH..'
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Voil\xE0, vous \xEAtes tout gu\xE9rie comme avant !"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 9
+    isAPhoto: 0
+    message: "...vous me l'avez recoll\xE9 \xE0 l'envers, et ca me fait toujours
+      mal"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: 'C''est l''intention qui compte, et je n''ai pas fini '
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Un petit bisou magique pour terminer
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: ' *smooch*'
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 9
+    isAPhoto: 0
+    message: " Uhm,..Olala, merci beaucoup monsieur le H\xE9ros, je me sent beaucoup
+      mieux maintenant apr\xE8s votre intervention, merci encore !"
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "C'est tout naturel enfin, gr\xE2ce \xE0 ca, je vais avoir le droit
+      \xE0 une gommette \xE9toile ! C'est mon patron qui me l'a dit !"
+    image: {fileID: 0}
+    timingForReadIt: 4
+  setUnlockIfForce: []

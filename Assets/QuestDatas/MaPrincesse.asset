@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5b1031973d947418a82c23eaec1ba6, type: 3}
+  m_Name: MaPrincesse
+  m_EditorClassIdentifier: 
+  id: MaPrincesse
+  messages:
+  - iconeIndex: 12
+    isAPhoto: 0
+    message: 'Aidez moi, je vous en conjure chevalier ! '
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Laissez moi deviner, encore votre princesse \xE0 sauver"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 12
+    isAPhoto: 0
+    message: ...oui
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 12
+    isAPhoto: 0
+    message: Je sais pas comment elle fait
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 12
+    isAPhoto: 0
+    message: "Mais bref..vous ne pouvez rester l\xE0 et en d\xE9battre, c'est votre
+      devoir de chevalier bon sang !"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Ok ok, donnez moi quelques secondes
+    image: {fileID: 0}
+    timingForReadIt: 2
+  timerForQuest: 6
+  messageIfMagic:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Alors, voyons voir, je devrais l'avoir encore dans mes contacts
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "...Ah, la voil\xE0"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Appelons la
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: ...
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 10
+    isAPhoto: 0
+    message: ' Oui ? Que voulez vous ?'
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Oui salut, c'est encore le h\xE9ros, et encore ton p\xE8re"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Rassure moi, t'es pas vraiment captur\xE9.."
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 10
+    isAPhoto: 0
+    message: "Oui h\xE9ros..., comme d'habitude, je suis juste partie avec mon copain
+      faire une sortie en amoureux..."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 10
+    isAPhoto: 0
+    message: "Et vu que mon p\xE8re n'approuve pas notre amour, il a toujours l'impression
+      que j'ai \xE9t\xE9 captur\xE9...il est naze des fois quand m\xEAme"
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Ok ok, bon on fait comme d'hab, tu rentres avant 21:00 chez toi, tu
+      lui dis que je t'ai lib\xE9rer, et on r\xE9p\xE8tera de la m\xEAme facon les
+      prochaines fois"
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 10
+    isAPhoto: 0
+    message: "Vous allez finir par devenir comme mon p\xE8re, mais bon faisons comme
+      ca, allez tchao "
+    image: {fileID: 0}
+    timingForReadIt: 3
+  setUnlockIfMagic: []
+  messageIfForce:
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous vous dirigez vers le hall du chateau; \xE0 o\xF9 tr\xF4ne le roi."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Je suis venu vous sauvez !
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 12
+    isAPhoto: 0
+    message: Quoi ?! Mais vous n'avez pas comprs, vous devez sauver la princesse,
+      bon sang qu'est ce qui vous prend !?
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Mais, mon roi, ..vous \xEAtes ma princesse"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 11
+    isAPhoto: 0
+    message: ...*rougis*...
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 11
+    isAPhoto: 0
+    message: Grand fou
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: '*sexy wink*'
+    image: {fileID: 0}
+    timingForReadIt: 3
+  setUnlockIfForce: []

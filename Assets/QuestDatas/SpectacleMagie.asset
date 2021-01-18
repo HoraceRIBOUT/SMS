@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5b1031973d947418a82c23eaec1ba6, type: 3}
+  m_Name: SpectacleMagie
+  m_EditorClassIdentifier: 
+  id: SpectacleMagie
+  messages:
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: Bonjour, j'aurais besoin de votre aide de toute urgence
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: Bonjour, en quoi puis je vous aider ?
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Je suis en plein spectacle de rue, et je viens de r\xE9aliser le tour
+      de la femme sci\xE9 en deux dans un tonneau."
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: Sauf que je ne me rapelle plus du sort pour la recoller !!
+    image: {fileID: 0}
+    timingForReadIt: 3
+  timerForQuest: 9
+  messageIfMagic:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Ne craignez rien, j'ai l\xE0 un bat\xF4n de sorcellerie sp\xE9cialement
+      pour l'occasion !"
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous sortez un baton magique jaune marqu\xE9 d'une inscription, UHU
+      Stic.."
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Tant bien que mal, et cach\xE9 du publique, vous recollez l'assistante
+      du magicien en deux ! "
+    image: {fileID: 0}
+    timingForReadIt: 3
+  setUnlockIfMagic: []
+  messageIfForce:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Je vais venir avec un rouleau de serpent collant, mais pas s\xFBr que
+      cela marche !  "
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous proc\xE9dez au recollage de l'assistante, cach\xE9 du publique,
+      en l'enroulant de serpent collant."
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Je crois qu'il va nous falloir plus qu'un rouleau..
+    image: {fileID: 0}
+    timingForReadIt: 3
+  setUnlockIfForce: []

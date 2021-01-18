@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5b1031973d947418a82c23eaec1ba6, type: 3}
+  m_Name: GaubeHelline
+  m_EditorClassIdentifier: 
+  id: GaubeHelline
+  messages:
+  - iconeIndex: 5
+    isAPhoto: 0
+    message: "Vous avez \xE9t\xE9 lik\xE9 par Princesse \r\nGaube-Helline. "
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: 'Sous ce nom, vous
+
+      voyez des photos d''une belle princesse,
+      aussi sage, et verte qu''une fleur.'
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Son visage aussi bien dessin\xE9,"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: avec des oreilles pointues..
+    image: {fileID: 0}
+    timingForReadIt: 3
+  timerForQuest: 9
+  messageIfMagic:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Eeeh, une petite minute..
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Vous \xEAtes un Gobelin pardi !"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 3
+    isAPhoto: 0
+    message: J'ai toujours voulu faire du cross-dressing, ca vous plait ?
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 3
+    isAPhoto: 0
+    message: UwU ?
+    image: {fileID: 0}
+    timingForReadIt: 3
+  setUnlockIfMagic: []
+  messageIfForce:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "J'ai une photo parfaite \xE0 lui montrer !"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: Vous lui montrez une "sword pic"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  setUnlockIfForce: []

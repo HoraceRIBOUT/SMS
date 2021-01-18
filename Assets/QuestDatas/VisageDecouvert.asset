@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5b1031973d947418a82c23eaec1ba6, type: 3}
+  m_Name: VisageDecouvert
+  m_EditorClassIdentifier: 
+  id: VisageDecouvert
+  messages:
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: "Au secours ! On m'as vol\xE9 mon visage !"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: 'Aidez moi '
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: ' Attendez, je peu trouver une solution!'
+    image: {fileID: 0}
+    timingForReadIt: 3
+  timerForQuest: 6
+  messageIfMagic:
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous remontez le temps. Cette requ\xEAte tr\xE8s \xE9trange n'as jamais
+      exist\xE9"
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: " Pfiouu, j'esp\xE8re ne jamais le revoir."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  setUnlockIfMagic: []
+  messageIfForce:
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous sortez un crayon rouge de votre poche et commencez \xE0 lui dessiner
+      un visage."
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 2
+    isAPhoto: 0
+    message: Hum.. c'est une solution..
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 2
+    isAPhoto: 0
+    message: "\xE7a rend bien ?"
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Parfaitement! N'ayez craintes, je suis s\xFBr que vous \xEAtes plus
+      beau qu'avant!"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 2
+    isAPhoto: 0
+    message: Super! Merci! Au revoir!
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Oui, oui, aurevoir!
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: ' Vous prenez la fuite.'
+    image: {fileID: 0}
+    timingForReadIt: 3
+  setUnlockIfForce: []

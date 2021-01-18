@@ -10,10 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: be531d3998ee4ee42968270cfc36b742, type: 3}
-  m_Name: Set-GobelinMuscle
+  m_Name: Set-Princesse
   m_EditorClassIdentifier: 
-  id: Gobelin Muscle
+  id: Princesse
   allCardToThatSet:
-  - {fileID: 11400000, guid: e805f34361247b94a85bf1500624ac41, type: 2}
+  - {fileID: 11400000, guid: fd2e0cc01bfb02749a4ac47ce8405642, type: 2}
+  - {fileID: 11400000, guid: 2d6fdfb8acfa98344813bd0ce8ee6070, type: 2}
+  - {fileID: 11400000, guid: 0941fe1d10e3c044798c916a59d98126, type: 2}
+  - {fileID: 11400000, guid: 00fbebb79807bcb4faca1b643c11cb70, type: 2}
   cardToRemove:
-  - {fileID: 11400000, guid: e52c0ec9978ab044d99a937ff2a6b964, type: 2}
+  - {fileID: 11400000, guid: 882f6d8597c6a794c92e2280bf077276, type: 2}

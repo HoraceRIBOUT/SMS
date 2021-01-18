@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5b1031973d947418a82c23eaec1ba6, type: 3}
+  m_Name: ParcoursSup
+  m_EditorClassIdentifier: 
+  id: ParcoursSup
+  messages:
+  - iconeIndex: 5
+    isAPhoto: 0
+    message: "Bonjour, vous avez cr\xE9\xE9 un compte sur la plateforme d'orientation
+      Parcours CharlemagneSup"
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 5
+    isAPhoto: 0
+    message: "Veuillez confirmez votre choix d'\xE9cole !"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  timerForQuest: 9
+  messageIfMagic:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Je crois que je vais officialiser mon choix d'aller en Pr\xE9pa PSI
+      (Prestidigitation et Science de l'Incantation)"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Prestidigitation et Science de l'Incantation
+    image: {fileID: 0}
+    timingForReadIt: 3
+  setUnlockIfMagic:
+  - {fileID: 11400000, guid: 320008d2281a0114a80f8f4f9a284707, type: 2}
+  messageIfForce:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Maintenant l'heure de pouvoir enfin faire un Master en Joute et Chevalerie
+      Sp\xE9 Templier !"
+    image: {fileID: 0}
+    timingForReadIt: 4
+  setUnlockIfForce:
+  - {fileID: 11400000, guid: 1daaee80630ef7642832fd991c8e08b1, type: 2}

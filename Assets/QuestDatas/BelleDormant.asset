@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5b1031973d947418a82c23eaec1ba6, type: 3}
+  m_Name: BelleDormant
+  m_EditorClassIdentifier: 
+  id: BelleDormant
+  messages:
+  - iconeIndex: 12
+    isAPhoto: 0
+    message: "Messires, de gr\xE2ce, aidez moi \xE0 r\xE9veiller ma pauvre\r\nboutchou"
+    image: {fileID: 0}
+    timingForReadIt: 5
+  - iconeIndex: 12
+    isAPhoto: 0
+    message: "Elle s'est piqu\xE9 sur un rouet et ne se r\xE9veille point !"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  timerForQuest: 9
+  messageIfMagic:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "N'ayez crainte ! Je m'en vais sonder ses r\xEAves pour la sauver !"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 10
+    isAPhoto: 0
+    message: Zzzzz...
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous d\xE9couvrez un r\xEAve recouvert de sang... Vous \xEAtes au milieu
+      d'entrailles et de boyaux."
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "En haut d'un monticules de cadavres : la princesse, arm\xE9e d'une
+      hache, tenant la couronne de son p\xE8re d'une main, la t\xEAte de ce dernier
+      dans l'autre."
+    image: {fileID: 0}
+    timingForReadIt: 5
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous d\xE9cidez de ne pas la r\xE9veiller."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  setUnlockIfMagic: []
+  messageIfForce:
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous lui tirez les poils, la langue et les orteils en m\xEAme temps."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 12
+    isAPhoto: 0
+    message: wtf bro ?
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous \xEAtes remerci\xE9 pour votre tentative et r\xE9compens\xE9.
+      Mais veuillez partir, vous mettez tout le monde mal \xE0 l'aise"
+    image: {fileID: 0}
+    timingForReadIt: 4
+  setUnlockIfForce: []

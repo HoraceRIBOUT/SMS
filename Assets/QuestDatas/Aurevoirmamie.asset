@@ -1,0 +1,153 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5b1031973d947418a82c23eaec1ba6, type: 3}
+  m_Name: Aurevoirmamie
+  m_EditorClassIdentifier: 
+  id: Aurevoirmamie
+  messages:
+  - iconeIndex: 6
+    isAPhoto: 0
+    message: Hooo, jeune homme, je ne me sens pas bien..
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Comment puis-je vous aidez grand-m\xEAre ?"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 6
+    isAPhoto: 0
+    message: "Je crois que mes heures sont comtp\xE9s.. Auriez vous une solution
+      pour allonger mes vieux jours ? "
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 6
+    isAPhoto: 0
+    message: 'Ou y mettrez vous fin ? '
+    image: {fileID: 0}
+    timingForReadIt: 3
+  timerForQuest: 9
+  messageIfMagic:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: J'ai justement un filtre sur moi.
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous vous rendez compte que vous avez malencontreusement achet\xE9
+      un filtre d'amour \"LoveChat\"."
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Il est \xE9cris dans les effets secondaires que l'\xEAtre aim\xE9 vous
+      aimera toute sa vie mais pas apr\xE8s. au contraire."
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Tenez, j'esp\xE8re que \xE7a marchera tout de m\xEAme."
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: La Mamie bois la potion et tombe folle amoureuse de vous.
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: Elle en fait une crise cardiaque et succombe.
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Sa peau se met \xE0 fondre et ses restes s'animes."
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Qu'est ce que ..!
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: "Je me sens bien mais je ne vous appr\xE9cie pas monsieur."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 13
+    isAPhoto: 0
+    message: "Votre t\xEAte ne me reviens pas. Je ne sais pas pourquoi.."
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 13
+    isAPhoto: 0
+    message: "Je m'en vais, \xE7a m'insupporte."
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Heu.. OK!
+    image: {fileID: 0}
+    timingForReadIt: 3
+  setUnlockIfMagic:
+  - {fileID: 11400000, guid: 63ada9ba59c8e9e4ea03fb2709945158, type: 2}
+  messageIfForce:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Shhhht.. Tout va bien..
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous assomez la grand-m\xE8re."
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "La grand-m\xE8re succombe et ses chairs commencent \xE0 fondre. Elle
+      \xE9tait vraiment vieille!"
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Son squelette s'anime et se l\xE8ve!"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 13
+    isAPhoto: 0
+    message: "MAIS VOUS \xCATES PAS BIEN ??"
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 13
+    isAPhoto: 0
+    message: "ASSOMER LES PETITES GENS COMME CA ?? QU'EST-CE QUI VOUS PASSE PAR LA
+      T\xCATE ??"
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 13
+    isAPhoto: 0
+    message: JE VOUS REVAUDRAIS CA!!
+    image: {fileID: 0}
+    timingForReadIt: 5
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: Le squelette s'en va.
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "J'ai peu \xEAtre fait une b\xE9tise.."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  setUnlockIfForce:
+  - {fileID: 11400000, guid: 63ada9ba59c8e9e4ea03fb2709945158, type: 2}

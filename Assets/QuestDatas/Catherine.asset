@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5b1031973d947418a82c23eaec1ba6, type: 3}
+  m_Name: Catherine
+  m_EditorClassIdentifier: 
+  id: Catherine
+  messages:
+  - iconeIndex: 5
+    isAPhoto: 0
+    message: "Catherine de Bourbon a lik\xE9 votre profil sur Thunder ! "
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "\"Sur les photos mise en ligne par la gente dame, \r\nvous en remarquez
+      une en particuli\xE8re"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Elle pose en tenue deffray\xE9 noire, orn\xE9e de pointe, avec un fouet
+      \xE0 la main"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "On peut y voir derri\xE8re plusieurs machines de tortures."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 10
+    isAPhoto: 0
+    message: "Cette vilaine princesse que je suis a besoin d'\xEAtre secourue"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 10
+    isAPhoto: 0
+    message: Rawr(de dragon)XD
+    image: {fileID: 0}
+    timingForReadIt: 1
+  timerForQuest: 6
+  messageIfMagic:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Je ne pourrais me permettre, mon sort de protection \"Puret\xE9\" doit
+      durer jusqu'\xE0 mes 30 ans\r\n"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Je me dois d'\xEAtre patient pour devenir le plus puissant des sorciers
+      !"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: Vous swiper vers la gauche le profil
+    image: {fileID: 0}
+    timingForReadIt: 2
+  setUnlockIfMagic: []
+  messageIfForce:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Youpi !
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "..Uhm que dis je, tenez bon princesse, je vole \xE0 votre rescousse"
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous chevaucher votre cheval et foncez la secourir, le sourire aux
+      l\xE8vres"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  setUnlockIfForce: []

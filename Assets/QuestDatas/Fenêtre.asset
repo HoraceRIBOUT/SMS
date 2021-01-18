@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5b1031973d947418a82c23eaec1ba6, type: 3}
+  m_Name: "Fen\xEAtre"
+  m_EditorClassIdentifier: 
+  id: "Fen\xEAtre"
+  messages:
+  - iconeIndex: 7
+    isAPhoto: 0
+    message: "J'aurais besoin de conseil en s\xE9duction !"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Je peux peut \xEAtre vous aider ! Expliquer moi votre situation."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 7
+    isAPhoto: 0
+    message: "Au abord du chateau, il y a une si belle princesse, qui regarde \xE0
+      l'horizon le soir \xE0 la fen\xEAtre"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 7
+    isAPhoto: 0
+    message: J'aimerais qu'elle me remarque, mais je ne sais pas comment..
+    image: {fileID: 0}
+    timingForReadIt: 3
+  timerForQuest: 12
+  messageIfMagic:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Vous devriez tenter de la s\xE9duire \xE0 l'aide d'une S\xE9r\xE9nade,
+      vous jouez d'un instrument ?"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 7
+    isAPhoto: 0
+    message: Erhm.. j'ai toujours mon pipeau de classe de 3e
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: ' Ca suffira, je vous conseille ce titre bien connu des troubadours
+      chantant des airs d''amours !'
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: '"Touerque, ma gente dame"'
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 7
+    isAPhoto: 0
+    message: D'accord, je fonce apprendre la chanson, merci beaucoup !
+    image: {fileID: 0}
+    timingForReadIt: 3
+  setUnlockIfMagic: []
+  messageIfForce:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Vous allez suivre mes indications, \xE9criver une lettre d'amour !"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 7
+    isAPhoto: 0
+    message: "D\xE9j\xE0 en poche, quoi d'autre ?"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Enroulez un cailloux avec la lettre, et jeter le tout vers sa fen\xEAtre
+      !"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 7
+    isAPhoto: 0
+    message: D'accord ! Je l'envoie
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 7
+    isAPhoto: 0
+    message: .....
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Alors ?
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 7
+    isAPhoto: 0
+    message: "Je crois que je l'ai assom\xE9.."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Elle s'est simplement \xE9vanouie d'amour en lisant votre lettre !
+      Ne vous en faites pas."
+    image: {fileID: 0}
+    timingForReadIt: 4
+  setUnlockIfForce: []

@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5b1031973d947418a82c23eaec1ba6, type: 3}
+  m_Name: Quintes
+  m_EditorClassIdentifier: 
+  id: Quintes
+  messages:
+  - iconeIndex: 15
+    isAPhoto: 0
+    message: Voulez vous chanter avec moi ? Je m'ennuie un peu
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Avec plaisir, j'adore pousser la chansonette !
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 15
+    isAPhoto: 0
+    message: 'Parfait ! Je chante la basse, pousser votre plus belle note ! '
+    image: {fileID: 0}
+    timingForReadIt: 2
+  timerForQuest: 9
+  messageIfMagic:
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous d\xE9cidez de chanter une tierce, le go\xFBt de la nouveaut\xE9
+      vous traversant l'esprit."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 15
+    isAPhoto: 0
+    message: "Vraiment ? Vous aller vous tenter \xE0 ces esth\xE9tique paiennes ?"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 15
+    isAPhoto: 0
+    message: "C'est d\xE9geulasse, ca me fait gerber"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 15
+    isAPhoto: 0
+    message: Je m'en vais faire un rapport au Pape. Vous allez prendre cher !!
+    image: {fileID: 0}
+    timingForReadIt: 4
+  setUnlockIfMagic: []
+  messageIfForce:
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous connaissez au mieux le chant de l'octave, on vous l'a fait r\xE9p\xE9ter
+      en boucle pendant les cours de solf\xE8ge de Barde"
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: C'est donc avec assurance que vous chanter une magnifique octave, certes
+      chiante, mais c'est mieux que rien"
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 15
+    isAPhoto: 0
+    message: Magnifique !
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 15
+    isAPhoto: 0
+    message: Vous vous y connaissez en musique !
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 15
+    isAPhoto: 0
+    message: " Pas comme tous ces autres arri\xE9r\xE9s qui chante des...tierces,
+      sixtes et autres floritures du Diable"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  setUnlockIfForce: []

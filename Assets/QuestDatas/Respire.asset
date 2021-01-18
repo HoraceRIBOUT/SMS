@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5b1031973d947418a82c23eaec1ba6, type: 3}
+  m_Name: Respire
+  m_EditorClassIdentifier: 
+  id: Respire
+  messages:
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: J'aurais besoin d'assistance
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Que puis je faire pour vous ?
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: Je suis hors de l'eau, j'ai voulu poursuivre une jeune fille jusqu'en
+      ville.
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: Et je peux pas respirer
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: lol
+    image: {fileID: 0}
+    timingForReadIt: 3
+  timerForQuest: 9
+  messageIfMagic:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: D'accord, pouvez vous m'indiquer votre position ?
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: ...je sais pas, je suis dans un village
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Vous pouvez me d\xE9crire les horizons ?"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: "..j'arrive plus \xE0 respirer..argh"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Cela ne m'aide pas beaucoup
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: '*Gaps*'
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Ecouter, si vous ne m'aider pas, je ne peux rien faire pour vous
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: ....
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Vous \xEAtes toujours l\xE0 ?"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  setUnlockIfMagic: []
+  messageIfForce:
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous apportez un sceau d'eau dans l'id\xE9e de lui mettre la t\xEAte
+      dedans"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: Super ! Je peux respirer un peu maintenant !
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Point de probl\xE8me, je m'en vais remplir de nouvelle qu\xEAte !"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous vous \xE9loignez et repartez"
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: "Mais attendez, je suis bloqu\xE9 avec la t\xEAte dans un sceau par
+      terre ! "
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: 'Comment voulez vous que je bouge ?? '
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: Il y a quelqu'un ?
+    image: {fileID: 0}
+    timingForReadIt: 3
+  setUnlockIfForce: []

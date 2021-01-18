@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5b1031973d947418a82c23eaec1ba6, type: 3}
+  m_Name: CombatEntrainer
+  m_EditorClassIdentifier: 
+  id: CombatEntrainer
+  messages:
+  - iconeIndex: 5
+    isAPhoto: 0
+    message: Vous avez recu une notification sur Joute en Ligne de Sir DarkL0rdK3vin
+      de St.Bagneux
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: 'Jte Fume en 1v1, ez rekt, v1 affronter mon regard dan la Joute Royal
+      ct''aprem !! '
+    image: {fileID: 0}
+    timingForReadIt: 3
+  timerForQuest: 9
+  messageIfMagic:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Je n'ai pas \xE0 r\xE9pondre au sollicitation du salopiot de gueux
+      que tu es K\xE9vin."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: Sniff..maieuh..
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: "Ma maman m'a toujours dis que j'\xE9tait un gentil garcon, vous n'aviez
+      pas \xE0 \xEAtre aussi m\xE9chant.."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: ..bouhouhou...
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: ...
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 6
+    isAPhoto: 0
+    message: "Ici la maman du petit K\xE9vin, ca vous amuse de faire pleurer des
+      gens comme ca ?"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 6
+    isAPhoto: 0
+    message: "Mon pauvre ptit ch\xE9ri. Il est tr\xE8s sensible, je vous demande
+      de vous excuser aurp\xE8s de lui.."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: ...
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Veuillez m'excuser pour mes mots Sir DarkL\xE0rdKevin de St.Bagneux"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  setUnlockIfMagic: []
+  messageIfForce:
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous vous rendez dans l'apr\xE8s midi \xE0 la Joute Royale de la ville."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: Vous attendez..
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: ...
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "... il est d\xE9j\xE0 minuit pass\xE9"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Toujours l\xE0 ? T'es pas venu"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 6
+    isAPhoto: 0
+    message: " Oui ici la maman du petit K\xE9vin, il a pris peur de votre provocation
+      et s'est refugi\xE9 dans sa chambre."
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 6
+    isAPhoto: 0
+    message: "Il s'est m\xEAme fait dessus, mon pauvre petit."
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Mais..c'est lui qui m'a provoqu\xE9 en duel.."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous rentrez chez vous, d\xE9go\xFBt\xE9 de ne pas avoir pu donner
+      une correction \xE0 ce noob."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  setUnlockIfForce: []

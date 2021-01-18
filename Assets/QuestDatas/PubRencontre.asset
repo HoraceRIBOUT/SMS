@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5b1031973d947418a82c23eaec1ba6, type: 3}
+  m_Name: PubRencontre
+  m_EditorClassIdentifier: 
+  id: PubRencontre
+  messages:
+  - iconeIndex: 5
+    isAPhoto: 0
+    message: " D\xE9couvrez, partout, \r\nautour de vous, les \r\nmeilleures princesses\r\n\xE0
+      sauver d'un dragon\r\nen un seul clic,\r\nd\xE9p\xEAche toi !"
+    image: {fileID: 0}
+    timingForReadIt: 5
+  timerForQuest: 9
+  messageIfMagic:
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous lancez un sort de \r\nd\xE9t\xE9ction d'un radius de 50km\r\nautour
+      de ton village"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  setUnlockIfMagic:
+  - {fileID: 11400000, guid: f7d2a70715c301b49823c455d6c32d46, type: 2}
+  messageIfForce:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Les femmes c'est pour les fillettes
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "vous supprimez le message (avec une certaine \r\namertume)"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  setUnlockIfForce: []

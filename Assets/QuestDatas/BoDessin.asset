@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5b1031973d947418a82c23eaec1ba6, type: 3}
+  m_Name: BoDessin
+  m_EditorClassIdentifier: 
+  id: BoDessin
+  messages:
+  - iconeIndex: 16
+    isAPhoto: 0
+    message: Bonjour! Vous avez 5 minutes ?
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Oui, bien-s\xFBr."
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Attendez, ce n'est pas pour remplir un formulaire avec mes adresses
+      de contact j'esp\xE8re ?!"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 16
+    isAPhoto: 0
+    message: Non, non, rassurez vous. C'est pour bien pire!
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Ho!
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: "J'ai fais un dessin \xE9trange et j'aimerai votre avis dessus!"
+    image: {fileID: 0}
+    timingForReadIt: 4
+  timerForQuest: 6
+  messageIfMagic:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "J'aurais peu \xEAtre vu les choses diff\xE9remment.. Puis-je y apporter
+      une petite modification ?"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 16
+    isAPhoto: 0
+    message: " Bien-s\xFBr, faites donc. Je pourrais toujours changer le dessin si
+      \xE7a ne me pla\xEEt pas."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Votre sortil\xE8ge rend le dessin un peu trop sexy."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: Sothar en a des flash backs de commandes d'artistes freelance.
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Il s'\xE9vouie."
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Hum..
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Le probl\xE8me est.. R\xE9gl\xE9 je suppose.."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  setUnlockIfMagic: []
+  messageIfForce:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Faites voir ?
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: Vous prenez le dessin en mains.
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Le dessin vous inspire. Peu \xEAtre m\xEAme un peu trop."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous d\xE9chirez le dessin dans votre enthousiasme."
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: OUPS!
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 16
+    isAPhoto: 0
+    message: HA!!
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Sothar reprend d\xE9licatement son dessin et s'en va sans un mot avec
+      une larme \xE0 l'oeil."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Hum.. J'aurais du faire plus attention..
+    image: {fileID: 0}
+    timingForReadIt: 3
+  setUnlockIfForce: []

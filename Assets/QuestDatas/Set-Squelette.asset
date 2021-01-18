@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: be531d3998ee4ee42968270cfc36b742, type: 3}
-  m_Name: Set-GobelinMuscle
+  m_Name: Set-Squelette
   m_EditorClassIdentifier: 
-  id: Gobelin Muscle
+  id: Set-Squelette
   allCardToThatSet:
-  - {fileID: 11400000, guid: e805f34361247b94a85bf1500624ac41, type: 2}
+  - {fileID: 11400000, guid: 24867b2695080fa4e9f2a47ab31fe683, type: 2}
   cardToRemove:
-  - {fileID: 11400000, guid: e52c0ec9978ab044d99a937ff2a6b964, type: 2}
+  - {fileID: 11400000, guid: 7eb40703de56eb341a48ab84b84e1c30, type: 2}

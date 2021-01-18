@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5b1031973d947418a82c23eaec1ba6, type: 3}
+  m_Name: DragonMobile
+  m_EditorClassIdentifier: 
+  id: DragonMobile
+  messages:
+  - iconeIndex: 9
+    isAPhoto: 0
+    message: Eh, dites m'sieur, vous pouvez m'aider ?
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "En quoi puis je vous \xEAtre utile ?"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 9
+    isAPhoto: 0
+    message: "Mon dragon mobile n'arrive plus \xE0 ..burps.. d\xE9marrer, pourtant
+      je l'ai amen\xE9 en r\xE9vision la semaine derni\xE8re.."
+    image: {fileID: 0}
+    timingForReadIt: 4
+  timerForQuest: 9
+  messageIfMagic:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Etes vous bien s\xFBr d'avoir ins\xE9r\xE9 la cl\xE9 dans le bonne
+      orifice ?"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 9
+    isAPhoto: 0
+    message: "Ah ouaaais, peut \xEAtre, attendez, je retente de bien la mettre ! "
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Surtout, ne l'ins\xE9rer pas dans l'orifice arri\xE8re !!"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Une inqui\xE9tude vous traverse en voyant que votre dernier message
+      ne poss\xE8de toujours pas le tag \"lu\" "
+    image: {fileID: 0}
+    timingForReadIt: 4
+  setUnlockIfMagic: []
+  messageIfForce:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Essayez de d\xE9boucher l'\xE9chappement arri\xE8re avec une ventouse,
+      elle est peut \xEAtre obstru\xE9e !"
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 9
+    isAPhoto: 0
+    message: "Mais d'o\xF9 tu crois que j'ai une ventouse sous la main ?"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Vous pouvez le faire avec les mains si vous voulez.
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 9
+    isAPhoto: 0
+    message: ......
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 9
+    isAPhoto: 0
+    message: Ok, je pars en acheter une.
+    image: {fileID: 0}
+    timingForReadIt: 2
+  setUnlockIfForce: []

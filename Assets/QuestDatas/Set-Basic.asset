@@ -15,3 +15,14 @@ MonoBehaviour:
   id: Basic Set
   allCardToThatSet:
   - {fileID: 11400000, guid: e52c0ec9978ab044d99a937ff2a6b964, type: 2}
+  - {fileID: 11400000, guid: 04cc572601b20ff4fb8ae613d4a10046, type: 2}
+  - {fileID: 11400000, guid: c6ade95307a3b15418a0787eab97da51, type: 2}
+  - {fileID: 11400000, guid: 882f6d8597c6a794c92e2280bf077276, type: 2}
+  - {fileID: 11400000, guid: a923f50f1fd2eb448b74bf29b00c6a08, type: 2}
+  - {fileID: 11400000, guid: 97423839170f50b47b9b94b01693c0aa, type: 2}
+  - {fileID: 11400000, guid: 7eb40703de56eb341a48ab84b84e1c30, type: 2}
+  - {fileID: 11400000, guid: b28967178b9bd9b4da3c159707fb8107, type: 2}
+  - {fileID: 11400000, guid: a764655a6cadd0249b09d0b653265f00, type: 2}
+  - {fileID: 11400000, guid: 373d4d24164dc1b40a5afa0027c30c3b, type: 2}
+  - {fileID: 11400000, guid: 6082eb056220e4143a002fe05d93d161, type: 2}
+  cardToRemove: []

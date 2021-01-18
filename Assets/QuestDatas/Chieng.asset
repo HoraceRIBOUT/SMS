@@ -1,0 +1,171 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5b1031973d947418a82c23eaec1ba6, type: 3}
+  m_Name: Chieng
+  m_EditorClassIdentifier: 
+  id: Chieng
+  messages:
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: wouaf wouaf
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Oooh le ptit chieng
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: T'es tout mignon toi hein ?
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: wouaf wouaf
+    image: {fileID: 0}
+    timingForReadIt: 2
+  timerForQuest: 6
+  messageIfMagic:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Qui qui c'est qui est le plus beau ?
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: 'Wouaf..wouaf waf '
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: 'Qui qui c''est qui est le plus gentil des chienchien '
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: Wouafff...arf, arf wouaaaaf
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: Ce chien semble ne plus pouvoir supporter autant d'amour, ne franchissez
+      pas la limite !
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Awww
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: (Stop, pas plus, je ne peux supporter !
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: WUUZ A GOOOD BOOOIIII ?
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: ...Wouarbgabrlarrrrrg..*paf
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Le chien a explos\xE9 de bonheur, vous n'auriez pas du franchir la
+      limite.."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  setUnlockIfMagic: []
+  messageIfForce:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Tu veux le b\xE2ton ?"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: Wouaf wouaf !!
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Awww, tu veux le baton ?
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: Wouaf, arwouaf !!
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Tu veux le b\xE2ton ?"
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: '... '
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Tu veux le b\xE2ton ?"
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: "Ok, \xE9coute, je suis une esp\xE8ce intelligente, je n'ai pas besoin
+      qu'on me r\xE9p\xE8te plusieurs fois la m\xEAme chose"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: '!!'
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: Euh, je veux dire, wouaf !
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: ...
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: ...
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Tu veux le b\xE2ton ?"
+    image: {fileID: 0}
+    timingForReadIt: 0.5
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: "Putain, oui je veux le b\xE2ton ? Bordel, tu veux que je te l'\xE9crive,
+      je peux te payer si tu veux, mais donne moi ce b\xE2ton, je le veux !!"
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous d\xE9cidez de lui donner le baton, l\xE9g\xE8rement attrist\xE9
+      par son comportement"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  setUnlockIfForce: []

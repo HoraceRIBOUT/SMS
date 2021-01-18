@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5b1031973d947418a82c23eaec1ba6, type: 3}
+  m_Name: Soif
+  m_EditorClassIdentifier: 
+  id: Soif
+  messages:
+  - iconeIndex: 8
+    isAPhoto: 0
+    message: J'ai..si soif
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: ' Pourquoi vous avez soif ?'
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 8
+    isAPhoto: 0
+    message: " Je ne peux pas boire, l'eau s'\xE9coule de mon verre, je suis maudit.."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: ..quoi ?
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Par curiosit\xE9, vous buvez dans quoi ?"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 8
+    isAPhoto: 0
+    message: "Ben le cr\xE2ne de mes adversaires pardi, je suis un m\xE9chant !"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Il est l\xE0 votre probl\xE8me, vous buvez dans des cr\xE2nes, les
+      boissons s''\xE9coulant des orbites. Vous \xEAtes un peu nigaud pour un m\xE9chant
+      quand m\xEAme"
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: 8
+    isAPhoto: 0
+    message: Oh eh, oh, attention
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 8
+    isAPhoto: 0
+    message: "Je veux juste qu'on m'aide \xE0 trouver une solution, pas qu'on me
+      juge !!"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 8
+    isAPhoto: 0
+    message: ..uhm, berf, vous avez une solution ?
+    image: {fileID: 0}
+    timingForReadIt: 1
+  timerForQuest: 6
+  messageIfMagic:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Je vous conseille \xE0 l'avenir de tuez des adversaires qui n'ont pas
+      de yeux"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 8
+    isAPhoto: 0
+    message: Comme quoi par exemple ?
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Ben, je sais pas, des vers g\xE9ants peut \xEAtre ?"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 8
+    isAPhoto: 0
+    message: "Oh, oh, excellente id\xE9e ! Je m'en vais de ce pas, merci encore,
+      vous feriez un excellent mignon !"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Minions vous voulez dire ? Enfin bref, je m'en vais compl\xE9ter d'autres
+      qu\xEAtes"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous vous \xE9loignez et repartez "
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 8
+    isAPhoto: 0
+    message: ...attendez une minute..
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 8
+    isAPhoto: 0
+    message: "Les vers g\xE9ants ont des cr\xE2nes ?"
+    image: {fileID: 0}
+    timingForReadIt: 4
+  setUnlockIfMagic: []
+  messageIfForce:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Attendez, je vais mettre des lunettes au cr\xE2ne, ca va emp\xEAcher
+      les boissons de s'\xE9couler"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous placez des lunettes tr\xE8s swag sur le cr\xE2ne dans lequel le
+      m\xE9chant bois."
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 8
+    isAPhoto: 0
+    message: "Aaah, merci beaucoup, je peux enfin boire gr\xE2ce \xE0 ca !"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Je vous en prie
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 13
+    isAPhoto: 0
+    message: "Oui merci, kakakaa ! Je voyais tr\xE8s mal sans lunette, je suis un
+      peu myope vous savez"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: '!!'
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 8
+    isAPhoto: 0
+    message: Oui faites pas attention, je sais pas non plus pourquoi il peut parler
+    image: {fileID: 0}
+    timingForReadIt: 3
+  setUnlockIfForce: []

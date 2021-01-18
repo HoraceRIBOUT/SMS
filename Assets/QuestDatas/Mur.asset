@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5b1031973d947418a82c23eaec1ba6, type: 3}
+  m_Name: Mur
+  m_EditorClassIdentifier: 
+  id: Mur
+  messages:
+  - iconeIndex: 9
+    isAPhoto: 0
+    message: Quelqu'un a fait un trou dans mon mur
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "\"Vous voyez un trou de la forme d'un gobelin de 4 m\xE8tres de haut"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  timerForQuest: 9
+  messageIfMagic:
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous cr\xE9ez une statue de gobelin g\xE9ante, et l'enfoncez dans le
+      trou."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: "Ouah... on dirais que j'ai chass\xE9 un gobelin de pierre"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: "Je vais pouvoir m'en vanter aupr\xE8s de toute mes amis sorceleur !
+      Merci Chevalier"
+    image: {fileID: 0}
+    timingForReadIt: 4
+  setUnlockIfMagic: []
+  messageIfForce:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Eyy, Mur !
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Regarde \xE7a"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous bandez vos muscles \xE0 fond"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: Le mur est jaloux
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Le mur bande ses muscles \xE0 son tour !"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "..le trou est ressorb\xE9"
+    image: {fileID: 0}
+    timingForReadIt: 4
+  setUnlockIfForce: []

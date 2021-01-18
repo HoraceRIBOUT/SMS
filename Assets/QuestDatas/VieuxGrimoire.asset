@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5b1031973d947418a82c23eaec1ba6, type: 3}
+  m_Name: VieuxGrimoire
+  m_EditorClassIdentifier: 
+  id: VieuxGrimoire
+  messages:
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous d\xE9cidez de vendre vos vieux grimoires de pr\xE9pa sur le site
+      LeBonMarch\xE9."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: " En pr\xE9parant des photos, vous remarquez un vieux grimoire miteux
+      avec un titre \xE0 moiti\xE9 effac\xE9 par le temps"
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: " Feuilletez l'int\xE9rieur vous montre quelques pages encore lisible
+      de sortil\xE8ge"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous avez l'impression d'avoir \xE9crit ces sorts il y a longtemps."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  timerForQuest: 9
+  messageIfMagic:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Voyons voir ce que ca donne, huh hum.."Salopus de Vachus"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: ...
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 6
+    isAPhoto: 0
+    message: Ici votre ancienne prof
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 6
+    isAPhoto: 0
+    message: " je vois que ca vous fait toujours rire d'utiliser m\xEAme aujourd'hui
+      des sorts pour m\xE9tamorphoser vos anciens professeur en vache ! "
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 6
+    isAPhoto: 0
+    message: "Je vous prie de bien vouloir ex\xE9cuter le sort d'annulation !"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 6
+    isAPhoto: 0
+    message: Je me vois mal faire ma retraite sous la forme d'une vache !
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "Vous semblez ne pas pouvoir retrouver ce sort dans ce qu'il semble
+      \xEAtre votre ancien grimoire, peut \xEAtre qu'il a \xE9t\xE9 grignot\xE9 par
+      le temps."
+    image: {fileID: 0}
+    timingForReadIt: 5
+  setUnlockIfMagic: []
+  messageIfForce:
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: "En le tenant un poil trop fort, le grimoire commence \xE0 s'effriter
+      et se dissout instantan\xE9ment"
+    image: {fileID: 0}
+    timingForReadIt: 4
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: ..oui.
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Oups..
+    image: {fileID: 0}
+    timingForReadIt: 3
+  setUnlockIfForce: []

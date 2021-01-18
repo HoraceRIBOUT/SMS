@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5b1031973d947418a82c23eaec1ba6, type: 3}
+  m_Name: Bavarmure
+  m_EditorClassIdentifier: 
+  id: Bavarmure
+  messages:
+  - iconeIndex: 13
+    isAPhoto: 0
+    message: "Diantre! Le tas de f\xE9raille!"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 13
+    isAPhoto: 0
+    message: J'ai une furieuse envie de vous taper la discute messires
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 13
+    isAPhoto: 0
+    message: Puis-je ?
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Vous avez une dr\xF4le de politesse monsieur squelette.."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Je vous affronterai \xE0 un duel de mots!"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 13
+    isAPhoto: 0
+    message: "Tr\xE8s bien, commen\xE7ons!"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 13
+    isAPhoto: 0
+    message: Quel qu'en soit l'issue, votre dialecte me passe au dessus!
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 13
+    isAPhoto: 0
+    message: "Que vaudra votre armure en tissus fasse \xE0 la force de ma massue
+      ?"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  timerForQuest: 8
+  messageIfMagic:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Pauvre cr\xE9ature, vous ne devriez plus vous battre \xE0 votre \xE2ge,"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: ' Faites le choix le plus sage, rappelez vous que je suis mage.'
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: De mon grimoire, Il me suffit d'une page pour vous mettre en cage
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: Vous emprisonnez le squelette
+    image: {fileID: 0}
+    timingForReadIt: 1
+  - iconeIndex: 13
+    isAPhoto: 0
+    message: "Saperlipopette! Quel \xE9chec!"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 13
+    isAPhoto: 0
+    message: "User de magie lors d'un duel de mot, vous \xEAtes abject!"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 13
+    isAPhoto: 0
+    message: Je sortirai d'ici et vous clouerai le bec!
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: La victoire est mienne pour cette fois,
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: De cette cage vous ne faites la loi.
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Acceptez la d\xE9faite et craignez moi !"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  setUnlockIfMagic: []
+  messageIfForce:
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: Pour soulever un groudin, il vous faut plus de force,
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Vous n'\xEAtes pas bien malin quand les choses se corses"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 0
+    isAPhoto: 0
+    message: "Votre brindille ne fera rien \xE0 mon armure d'\xE9corce!"
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: Le squelette tente de brandir son arme.
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 13
+    isAPhoto: 0
+    message: "N'ayant pas de muscle, ses bras qui tenaient d'une faible magie n\xE9crotique
+      lachent."
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 13
+    isAPhoto: 0
+    message: "Vous avez gagn\xE9 cette manche d'une totale nonchalance.."
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: 13
+    isAPhoto: 0
+    message: "Mais je reviendrai vous affronter et nous verrons de quel c\xF4t\xE9
+      penche la balance"
+    image: {fileID: 0}
+    timingForReadIt: 3
+  - iconeIndex: 13
+    isAPhoto: 0
+    message: En attendant je vais prendre un peu de vacances!
+    image: {fileID: 0}
+    timingForReadIt: 2
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: Le squelette ramasse ses bras avec sa bouche et s'en va.
+    image: {fileID: 0}
+    timingForReadIt: 3
+  setUnlockIfForce: []
