@@ -79,9 +79,14 @@ MonoBehaviour:
     timingForReadIt: 1
   - iconeIndex: 18
     isAPhoto: 0
-    message: ...Wouarbgabrlarrrrrg..*paf
+    message: ...Wouarbgabrlarrrrrg..
     image: {fileID: 0}
-    timingForReadIt: 4
+    timingForReadIt: 0.2
+  - iconeIndex: -1
+    isAPhoto: 0
+    message: '*paf*'
+    image: {fileID: 0}
+    timingForReadIt: 3
   - iconeIndex: -1
     isAPhoto: 0
     message: "Le chien a explos\xE9 de bonheur, vous n'auriez pas du franchir la

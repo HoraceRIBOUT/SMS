@@ -26,7 +26,7 @@ MonoBehaviour:
     timingForReadIt: 3
   - iconeIndex: -1
     isAPhoto: 0
-    message: "\"Sur les photos mise en ligne par la gente dame, \r\nvous en remarquez
+    message: "Sur les photos mise en ligne par la gente dame, \r\nvous en remarquez
       une en particuli\xE8re"
     image: {fileID: 0}
     timingForReadIt: 3

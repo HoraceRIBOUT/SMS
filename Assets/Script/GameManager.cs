@@ -56,13 +56,13 @@ public class GameManager : MonoBehaviour
         currentQuestDeck.RemoveAt(0);
 
         //Treat current quest
-        TreatCurrentQuest();
+        TreatCurrentQuest(true);
     }
 
-    public void TreatCurrentQuest()
+    public void TreatCurrentQuest(bool firstQuest)
     {
         questNumber++;
-        StartCoroutine(DiplayQuestRequest(currentQuest, true));
+        StartCoroutine(DiplayQuestRequest(currentQuest, firstQuest));
         //wait for end of discussion
 
     }
@@ -192,7 +192,7 @@ public class GameManager : MonoBehaviour
         currentQuestDeck.RemoveAt(randomQuest);
 
         //Treat current quest
-        TreatCurrentQuest();
+        TreatCurrentQuest(false);
 
     }
 
@@ -210,5 +210,12 @@ public class GameManager : MonoBehaviour
         {
             TrueStart();
         }
+
+
+        if (Input.GetKeyDown(KeyCode.P))
+            Time.timeScale *= 2;
+        if(Input.GetKeyDown(KeyCode.O))
+            Time.timeScale /= 2;
+
     }
 }

@@ -1725,8 +1725,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f1088f01898396547bfe5dbfab1a1637, type: 3}
   - {fileID: 21300000, guid: 04bfeacb227244c468650dcd0d28cb6d, type: 3}
   - {fileID: 21300000, guid: 5fd6df44ade2ffe4bb16ad8a367594a2, type: 3}
-  - {fileID: 21300000, guid: 6a4e7a56d109da44fbbb8399119efd00, type: 3}
   - {fileID: 21300000, guid: ef23e0d6b9ab6114fa30f3c156b87dae, type: 3}
+  - {fileID: 21300000, guid: 6a4e7a56d109da44fbbb8399119efd00, type: 3}
   messageCreated: []
   speed: 5
   messageCurve:
@@ -2152,6 +2152,31 @@ MonoBehaviour:
   currentState: 0
   questDataFullDeck:
   - {fileID: 11400000, guid: c758ff6d8ce65af41968b2930a1388bb, type: 2}
+  - {fileID: 11400000, guid: 7eb40703de56eb341a48ab84b84e1c30, type: 2}
+  - {fileID: 11400000, guid: 24867b2695080fa4e9f2a47ab31fe683, type: 2}
+  - {fileID: 11400000, guid: 04cc572601b20ff4fb8ae613d4a10046, type: 2}
+  - {fileID: 11400000, guid: a764655a6cadd0249b09d0b653265f00, type: 2}
+  - {fileID: 11400000, guid: 728c97e0e2874bf49b843a7d4265050d, type: 2}
+  - {fileID: 11400000, guid: fd2e0cc01bfb02749a4ac47ce8405642, type: 2}
+  - {fileID: 11400000, guid: 6082eb056220e4143a002fe05d93d161, type: 2}
+  - {fileID: 11400000, guid: a923f50f1fd2eb448b74bf29b00c6a08, type: 2}
+  - {fileID: 11400000, guid: a08f23c9d1ad6924f9cb5f5d585dcf7c, type: 2}
+  - {fileID: 11400000, guid: 97423839170f50b47b9b94b01693c0aa, type: 2}
+  - {fileID: 11400000, guid: 0941fe1d10e3c044798c916a59d98126, type: 2}
+  - {fileID: 11400000, guid: 2d6fdfb8acfa98344813bd0ce8ee6070, type: 2}
+  - {fileID: 11400000, guid: e52c0ec9978ab044d99a937ff2a6b964, type: 2}
+  - {fileID: 11400000, guid: aecfffc0bc5f97a46aa633177d10ab80, type: 2}
+  - {fileID: 11400000, guid: 00fbebb79807bcb4faca1b643c11cb70, type: 2}
+  - {fileID: 11400000, guid: e805f34361247b94a85bf1500624ac41, type: 2}
+  - {fileID: 11400000, guid: 4314f4dcc232d2a428e58c9510ab1959, type: 2}
+  - {fileID: 11400000, guid: 882f6d8597c6a794c92e2280bf077276, type: 2}
+  - {fileID: 11400000, guid: 0065ccd970da36a489e4080adf9d6c48, type: 2}
+  - {fileID: 11400000, guid: b28967178b9bd9b4da3c159707fb8107, type: 2}
+  - {fileID: 11400000, guid: 373d4d24164dc1b40a5afa0027c30c3b, type: 2}
+  - {fileID: 11400000, guid: 7171797b16d5efc4a9dc0662474a7478, type: 2}
+  - {fileID: 11400000, guid: c758ff6d8ce65af41968b2930a1388bb, type: 2}
+  - {fileID: 11400000, guid: 0f578c9be0f5b6845a295fb2e010c676, type: 2}
+  - {fileID: 11400000, guid: c6ade95307a3b15418a0787eab97da51, type: 2}
   currentQuestDeck: []
   currentQuest: {fileID: 0}
   questNumber: 0
