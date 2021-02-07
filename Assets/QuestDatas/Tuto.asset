@@ -78,7 +78,7 @@ MonoBehaviour:
     message: Allez... Comment j'ouvre cette porte moi ?
     image: {fileID: 0}
     timingForReadIt: 3
-  timerForQuest: 15
+  timerForQuest: 25
   messageIfMagic:
   - iconeIndex: -1
     isAPhoto: 0

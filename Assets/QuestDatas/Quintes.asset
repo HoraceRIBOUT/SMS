@@ -29,7 +29,7 @@ MonoBehaviour:
     message: 'Parfait ! Je chante la basse, pousser votre plus belle note ! '
     image: {fileID: 0}
     timingForReadIt: 2
-  timerForQuest: 9
+  timerForQuest: 16
   messageIfMagic:
   - iconeIndex: -1
     isAPhoto: 0

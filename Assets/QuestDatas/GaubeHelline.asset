@@ -28,8 +28,8 @@ MonoBehaviour:
     isAPhoto: 0
     message: 'Sous ce nom, vous
 
-      voyez des photos d''une belle princesse,
-      aussi sage, et verte qu''une fleur.'
+      voyez des photos d''une belle princesse, aussi
+      sage, et verte qu''une fleur.'
     image: {fileID: 0}
     timingForReadIt: 3
   - iconeIndex: -1
@@ -47,7 +47,7 @@ MonoBehaviour:
     message: "Dois je y voir une supercherie ? Hmm, elle est quand m\xEAme attirante"
     image: {fileID: 0}
     timingForReadIt: 4
-  timerForQuest: 9
+  timerForQuest: 16
   messageIfMagic:
   - iconeIndex: 0
     isAPhoto: 0

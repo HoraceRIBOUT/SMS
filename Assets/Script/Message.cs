@@ -20,6 +20,7 @@ public class Message : MonoBehaviour
 
     public float margin = 11;
     public float marginImage = 1.3f;
+    public float adjustement = 1;
 
     public void Init(Sprite icon, bool heros, float height)
     {
@@ -65,10 +66,11 @@ public class Message : MonoBehaviour
         textGO.gameObject.SetActive(true);
         imageGO.gameObject.SetActive(false);
 
+        Resize();
         textGO.SetText(message);
         textGO.ForceMeshUpdate();
 
-        float height = textGO.renderedHeight + margin * 2;//textGO.textInfo.lineCount * (textGO.fontSize + textGO.lineSpacing + ) + margin * 2;
+        float height = textGO.renderedHeight + (margin * 2 * (1/adjustement));//textGO.textInfo.lineCount * (textGO.fontSize + textGO.lineSpacing + ) + margin * 2;
         Init(height);
 
 
@@ -86,10 +88,11 @@ public class Message : MonoBehaviour
         textGO.gameObject.SetActive(true);
         imageGO.gameObject.SetActive(false);
 
+        Resize();
         textGO.SetText(message);
         textGO.ForceMeshUpdate();
 
-        float height = textGO.renderedHeight + margin * 2;//textGO.textInfo.lineCount * (textGO.fontSize + textGO.lineSpacing + ) + margin * 2;
+        float height = textGO.renderedHeight + (margin * 2 * (1 / adjustement));//textGO.textInfo.lineCount * (textGO.fontSize + textGO.lineSpacing + ) + margin * 2;
         Init(icon, heros, height);
 
 
@@ -101,6 +104,7 @@ public class Message : MonoBehaviour
         float height = imageRect.rect.width * marginImage;
         Init(icon, heros, height);
 
+        Resize();
         textGO.gameObject.SetActive(false);
         imageGO.gameObject.SetActive(true);
 
@@ -155,4 +159,23 @@ public class Message : MonoBehaviour
         Destroy(this.gameObject);
     }
 
+
+    public float ratio = 0.05f;
+
+    void Resize()
+    {
+        textGO.fontSize = ratio * Screen.height;
+        adjustement = 1 / (Screen.height / 588.0f);
+
+
+        foreach (GameObject gO in leftGO)
+            gO.GetComponent<Image>().pixelsPerUnitMultiplier = adjustement;
+        foreach (GameObject gO in rightGO)                     
+            gO.GetComponent<Image>().pixelsPerUnitMultiplier = adjustement;
+        foreach (GameObject gO in descGO)                      
+            gO.GetComponent<Image>().pixelsPerUnitMultiplier = adjustement;
+        
+        
+
+    }
 }

@@ -38,7 +38,7 @@ MonoBehaviour:
     message: Alors, qu'allez vous choisir maintenant ?
     image: {fileID: 0}
     timingForReadIt: 3
-  timerForQuest: 12
+  timerForQuest: 20
   messageIfMagic:
   - iconeIndex: 16
     isAPhoto: 0
@@ -68,6 +68,11 @@ MonoBehaviour:
       \xE0 la fois sur votre passion et sur vous  m\xEAme !"
     image: {fileID: 0}
     timingForReadIt: 4
+  - iconeIndex: 1
+    isAPhoto: 0
+    message: "Et dans tout les cas : on se reverra ! Bonne chance \xE0 tous !"
+    image: {fileID: 0}
+    timingForReadIt: 3
   setUnlockIfMagic: []
   messageIfForce:
   - iconeIndex: 17

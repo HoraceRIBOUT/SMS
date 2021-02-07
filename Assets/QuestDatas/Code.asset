@@ -29,7 +29,7 @@ MonoBehaviour:
     message: Qu'est ce que c'est ?
     image: {fileID: 0}
     timingForReadIt: 3
-  timerForQuest: 12
+  timerForQuest: 20
   messageIfMagic:
   - iconeIndex: 0
     isAPhoto: 0

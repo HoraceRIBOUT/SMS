@@ -34,7 +34,7 @@ MonoBehaviour:
     message: wouaf wouaf
     image: {fileID: 0}
     timingForReadIt: 2
-  timerForQuest: 12
+  timerForQuest: 20
   messageIfMagic:
   - iconeIndex: 0
     isAPhoto: 0

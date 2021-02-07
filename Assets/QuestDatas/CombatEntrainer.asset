@@ -26,7 +26,7 @@ MonoBehaviour:
       ct''aprem !! '
     image: {fileID: 0}
     timingForReadIt: 3
-  timerForQuest: 9
+  timerForQuest: 16
   messageIfMagic:
   - iconeIndex: 0
     isAPhoto: 0

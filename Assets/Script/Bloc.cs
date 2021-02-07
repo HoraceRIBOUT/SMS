@@ -67,7 +67,8 @@ public class Bloc : MonoBehaviour
 
     public void Rotate()
     {
-
+        if (rotateRoutine != null) StopCoroutine(rotateRoutine);
+        rotateRoutine = StartCoroutine(LaunchRotation(true));
     }
 
     // Update is called once per frame
@@ -101,8 +102,7 @@ public class Bloc : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                if (rotateRoutine != null) StopCoroutine(rotateRoutine);
-                rotateRoutine = StartCoroutine( LaunchRotation(true));
+                Rotate();
             }
 
 

@@ -20,7 +20,7 @@ MonoBehaviour:
       sauver d'un dragon\r\nen un seul clic,\r\nd\xE9p\xEAche toi !"
     image: {fileID: 0}
     timingForReadIt: 5
-  timerForQuest: 9
+  timerForQuest: 16
   messageIfMagic:
   - iconeIndex: -1
     isAPhoto: 0

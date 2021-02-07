@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
 
-[CreateAssetMenu(fileName = "Quest", menuName = "ScriptableObjects/QuestData", order = 1)]
+[CreateAssetMenu(fileName = "Quest", menuName = "SMS/QuestData", order = 1)]
 public class QuestData : ScriptableObject
 {
     //[HideInInspector]
@@ -37,7 +37,7 @@ public class QuestData : ScriptableObject
         poisson,
 
     }
-
+    
 
     [System.Serializable]
     public class Message

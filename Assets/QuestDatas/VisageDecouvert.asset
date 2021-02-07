@@ -29,7 +29,7 @@ MonoBehaviour:
     message: ' Attendez, je peu trouver une solution!'
     image: {fileID: 0}
     timingForReadIt: 3
-  timerForQuest: 10
+  timerForQuest: 18
   messageIfMagic:
   - iconeIndex: -1
     isAPhoto: 0

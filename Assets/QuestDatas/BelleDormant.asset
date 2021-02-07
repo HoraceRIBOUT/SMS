@@ -29,7 +29,7 @@ MonoBehaviour:
     message: 
     image: {fileID: 21300000, guid: 7606565714b6b3a4fbb4e8f528180765, type: 3}
     timingForReadIt: 3
-  timerForQuest: 9
+  timerForQuest: 16
   messageIfMagic:
   - iconeIndex: 0
     isAPhoto: 0

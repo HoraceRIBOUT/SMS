@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     public Spawner spawner;
     public Timer timer;
     public AudioManager audioManager;
+
+    public TMPro.TMP_Text textToFade;
     
 
     public enum gameState
@@ -57,7 +59,20 @@ public class GameManager : MonoBehaviour
 
         //Treat current quest
         TreatCurrentQuest(true);
+
+        StartCoroutine(FadeIntro());
     }
+
+    public IEnumerator FadeIntro()
+    {
+        while (textToFade.color.a > 0)
+        {
+            textToFade.color -= Color.black * Time.deltaTime;
+            yield return  new WaitForSeconds(0.01f);
+        }
+        textToFade.color = Color.clear;
+    }
+
 
     public void TreatCurrentQuest(bool firstQuest)
     {
@@ -206,7 +221,7 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
-        if(currentState == gameState.start && Input.GetMouseButtonDown(0))
+        if(currentState == gameState.start && (Input.GetMouseButtonDown(0) || Input.touchCount > 0))
         {
             TrueStart();
         }

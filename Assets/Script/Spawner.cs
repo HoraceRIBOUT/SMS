@@ -14,6 +14,7 @@ public class Spawner : MonoBehaviour
 
     public List<GameObject> blocPrefab = new List<GameObject>();
     public bool imfree = true;
+    public bool onOverClock = false;
     public Balance balance;
 
     public List<Color> availableColor;
@@ -63,21 +64,73 @@ public class Spawner : MonoBehaviour
 
     public void ActiveBlocGoLeft()
     {
-        if (lastBloc != null)
-            lastBloc.GoLeft();
+        Debug.Log("Go left");
+        leftInput = true;
     }
 
     public void ActiveBlocGoRight()
     {
-        if (lastBloc != null)
-            lastBloc.GoRight();
+        Debug.Log("Go right");
+        rightInput = true;
     }
 
+    public void DeactiveBlocGoLeft()
+    {
+        Debug.Log("Stop left");
+        leftInput = false;
+    }
+
+    public void DeactiveBlocGoRight()
+    {
+        Debug.Log("Stop right");
+        rightInput = false;
+    }
+
+
+    public void ActiveRotate()
+    {
+        if (lastBloc != null)
+            lastBloc.Rotate();
+    }
+
+    bool rightInput = false;
+    bool leftInput = false;
+    public void Update()
+    {
+        if (rightInput)
+        {
+            if (lastBloc != null)
+                lastBloc.GoRight();
+        }
+        if (leftInput)
+        {
+            if (lastBloc != null)
+                lastBloc.GoLeft();
+        }
+    }
+
+    public IEnumerator cleanUpWait(int questNumber)
+    {
+        yield return new WaitForSeconds(.5f);
+        onOverClock = false;
+        SpawnBloc(questNumber);
+    }
 
     public void SpawnBloc(int questNumber)
     {
         if (!imfree)
             return;
+        if (onOverClock)
+            return;
+
+        if (allCurrentBloc.Count > 25)
+        {
+            onOverClock = true;
+            CleanUp();
+            StartCoroutine(cleanUpWait(questNumber));
+            return;
+        }
+
         int index = Random.Range(0, blocPrefab.Count) ;
 
         Bloc bloc = Instantiate(blocPrefab[index], this.transform.position, Quaternion.identity, null).GetComponent<Bloc>();
@@ -90,8 +143,16 @@ public class Spawner : MonoBehaviour
         imfree = false;
 
         allCurrentBloc.Add(bloc);
-
+        
         lastBloc = bloc;
+    }
+
+    public void CleanUp()
+    {
+        for (int i = allCurrentBloc.Count - 1; i > 5 ; i--)
+        {
+            allCurrentBloc[i].KillMe();
+        }
     }
 
     public void ClearBloc(int questNumber)
